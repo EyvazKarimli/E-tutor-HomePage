@@ -1,0 +1,109 @@
+@media (max-width:1280px) {
+    header{
+        nav{
+            div.top-nav{
+                justify-content: flex-start;
+                gap: 2rem;
+                padding: 1rem;
+                div.select-container{
+                    display: block;
+                }
+
+            }
+            div.top-nav_menu ul{
+                display: none;
+            }
+            div.top-nav_menu label{
+                display: block;
+            }
+            div.bottom-nav{
+                div.bottom-nav_left-side_search_bar{
+                    display: none;
+                }
+                div.select-container{
+                    display: none;
+                }
+            }
+            
+        }
+    }
+}
+
+
+@media (max-width:1000px){
+    header{
+        section.heading{
+            gap: 0%;
+            div.heading_left-side{
+                flex-basis: 60%;
+                div.heading_left-side_container{
+                    width: 100%;
+                    padding-left: 1rem;
+                    justify-content: space-around;
+                    p.catchword{
+                        font-size: 1.5em;
+                    }
+                    p.mision{
+                        font-size: 80%;
+                        width: 100%;
+                    }
+                    div.heading_left-side_container_content_button{
+                        a{
+                            padding: 0.25rem 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 640px){
+    header{
+        div.top-nav{
+            &_options{
+                flex-wrap: wrap;
+            }
+        }
+        div.bottom-nav{
+            div.bottom-nav_right-side{
+                flex-direction: column;
+                &_buttons{
+                    gap: 0.5rem;
+                    a{
+                        padding: 0 0.5rem;
+                        line-height: 2rem;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 480px){
+    header{
+        nav{
+            div.bottom-nav{
+                flex-wrap: wrap;
+                gap: 2rem;
+                div.bottom-nav_right-side_buttons{
+                    flex-direction: column;
+                    a{
+                        width: 100%;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        section.heading{
+            flex-direction: column;
+            gap: 2rem;
+            div.heading_left-side_container{
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    }
+}

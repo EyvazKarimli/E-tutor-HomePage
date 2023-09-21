@@ -1,0 +1,333 @@
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #424249;
+    @include flexBox(column, flex-start, flex-start, 2rem);
+    padding: 5rem 2rem;
+    z-index: 5;
+    .close-menu{
+        display: block;
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        top: 2%;
+        left: 8%;
+        cursor: pointer;
+    }
+    &_menu{
+        ul{
+            @include flexBox(column, space-between, flex-start, 3rem);
+            a{
+                display: block;
+                font-size: 1.5rem;
+                color: white;
+                transform: translate(0);
+                transition: 0.3s;
+                &:hover{
+                    color: $btn-color;
+                    transform: translateX(15%);
+
+                }
+            }
+        }
+    }
+    &_buttons{
+        width: 70%;
+        @include flexBox(column,space-between, flex-start, 2rem);
+        a{
+            width: 100%;
+            padding: 0.5rem 1.25rem;
+            background-color: $btn-bg;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: $btn-color;
+            &:last-of-type{
+                color: white;
+                background-color: $btn-color;
+            }
+        }
+    }
+    &_search{
+        background-color: white;
+        padding: 0.5rem 1rem;
+        border: 1px solid black;
+        @include flexBox(row, null, center, 0.5rem);
+        input{
+            height: 100%;
+            width: 100%;
+            border: none;
+            outline: none;
+        }
+    }
+    transform: translateX(-100%);
+    transition: 1s transform;
+}
+
+#check-menu{
+    display: none;
+    &:checked{
+        & ~ label.full-page{
+            display: block;
+            opacity: 1;
+        }
+        & ~ div.navbar{
+            transform: translateX(0%);
+            background-color: #3d4249;
+        }
+        & ~ header nav .top-nav{
+            transform: translateX(25%);
+            & label{
+            visibility: hidden;
+            }
+            &_menu {
+                ul{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.full-page{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(211, 211, 211, 0.589);
+    z-index: 3;
+    transition: 1s;
+    display: none;
+    opacity: 0;
+}
+
+
+header{
+    overflow: hidden;
+    nav{
+        .top-nav{
+            background-color: black;
+            @include flexBox(row, space-between, center, null);
+            transform: translateX(0);
+            transition: 1s transform;
+            padding: 0 1.724%;
+            &_menu{
+                display: flex;
+                align-items: center;
+                &_label{
+                    color: $btn-color;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                    display: none;
+                }
+                ul{
+                    display: block;
+                    @include flexBox(row, null, center, null);
+                    li{
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                        line-height: 1.25rem;
+                        letter-spacing: -0.00875rem;
+                        position: relative;
+                        text-align: center;
+                        padding: 1rem;
+                        border: 3px solid black;
+                        &:hover{
+                            border-bottom: 3px solid $btn-color;
+                            border-bottom-right-radius: 50%;
+                            border-bottom-left-radius: 50%;
+                        }
+                        &:hover a{
+                            color: white;
+                        }
+                        a{
+                            color: $menu-gray;
+                        }
+                    }
+                }
+            }
+            &_options{
+                @include flexBox(row, null, center, 1.5rem);
+                .select-container{
+                    display: none;
+                }
+                select{
+                    font-size: 0.875rem;
+                    line-height: 1.375rem;
+                    letter-spacing: -0.00875rem;
+                    color: $menu-gray;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    outline: none;
+                    &:hover{
+                        color: $btn-color;
+                    }
+                    option{
+                        font-size: 0.875rem;
+                        line-height: 1.375rem;
+                        background-color: black;
+                        color: $menu-gray;
+                    }
+                
+                }
+
+            }
+            
+        }
+        & .bottom-nav{
+            padding: 1.5rem  1.724%;
+            border-bottom:  1px solid #E9EAF0;
+            @include flexBox (row, space-between, center, null);
+            &_left-side{
+                @include flexBox (row, null, center, 1.5rem);
+                &_logo{
+                    @include flexBox (row, null, center, 0.5rem);
+                    p{
+                        font-size: 2rem;
+                        font-weight: 600;
+                        line-height: 124%;
+                        letter-spacing: -0.06rem;
+                    }
+                }
+                &_search{
+                    @include flexBox (row, null, center, 1rem);
+                    select{
+                        display: block;
+                        width:  100%;
+                        padding: 0.75rem 0;
+                        padding-left: 1.12rem;
+                        border: 1px solid  #E9EAF0;
+                        line-height: 1.5rem;
+                        color: #4E5566;
+                        cursor: pointer;
+                        outline: none;
+                        option{
+                            font-size: 0.875rem;
+                            line-height: 1.375rem;
+                            background-color: black;
+                            color: $menu-gray;
+                        }
+                    }
+                    &_bar{
+                        display: block;
+                        max-width: 100%;
+                        height: 1.5rem;
+                        padding: 0.5rem 1.12rem;
+                        border: 1px solid  #E9EAF0;
+                        @include flexBox (row, space-between, center, null);
+                        label{
+                            cursor: pointer;
+                        }
+                        input{
+                            display: block;
+                            min-width: 23rem;
+                            height: 2rem;
+                            border: none;
+                            outline: none;
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+            }
+
+            &_right-side{
+                @include flexBox (row, flex-end, center, 1.5rem);
+                &_icons{
+                    @include flexBox (row, null, center, 1.5rem);
+                    i{
+                        font-size: 1.2rem;
+                        transform: scale(1);
+                        transition: 0.3s;
+                        cursor: pointer;
+                        &:hover{
+                            transform: scale(1.2);
+                            color: $btn-color;
+                        }
+                    }
+                }
+                &_buttons{
+                    display: flex;
+                    gap: 0.75rem;
+                    a{
+                        display: block;
+                        background-color: $btn-bg;
+                        padding: 0 1.5rem;
+                        font-weight: 600;
+                        line-height: 2.5rem;
+                        text-transform: capitalize;
+                        color: $btn-color;
+                        transform: scale(1);
+                        transition: 0.3s;
+                        &:last-of-type{
+                            background-color: $btn-color;
+                            color: white;
+                        }
+                        &:hover{
+                            transform: scale(1.1);   
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+                }
+
+
+                
+            }
+        }
+    }
+
+    .heading{
+        @include flexBox (row, null, null, 3.75%);
+        background: linear-gradient(180deg, rgba(240, 242, 245, 0.00) 0.02%, #F0F2F5 220.8%);
+        &_left-side{
+            flex-basis: 49.375%;
+            @include flexBox(row, flex-end, null, null);
+            &_container{
+                width: 68.35%;
+                @include flexBox(column, space-evenly, flex-start, null);
+                &_content{
+                    .catchword{
+                        font-size: 2em;
+                        font-weight: 600;
+                        color: black;
+                    }
+                    .mision{
+                        font-size: 110%;
+                        color: #4E5566;
+                    }
+                    &_button{
+                        a{
+                            padding: 1rem 2rem;
+                            font-size: 100%;
+                            font-weight: 600;
+                            letter-spacing: -0.01125rem;
+                            text-transform: capitalize;
+                            background-color: $btn-color;
+                            color: white;
+                        }
+                    }
+                }
+
+            }
+
+        }
+        &_right-side{
+            height: 100%;
+            flex-basis: 46.875%;
+            &_img{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+
+        }
+        
+    }
+}

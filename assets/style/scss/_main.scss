@@ -1,0 +1,808 @@
+.category{
+    @include flexBox (column, center, center, 2.5rem);
+    padding: 5rem 10%;
+    &_heading{
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: 3rem;
+        letter-spacing: -0.025rem;
+    }
+    &_content{
+        @include flexBox (row, center, null, 1.5rem);
+        flex-wrap: wrap;
+        &_card{
+            width: 14rem;
+            height: 4rem;
+            padding: 1.25rem;
+            @include flexBox (row, null, center, 5.5%);
+            box-shadow: 0px 12px 32px 0px rgba(29, 32, 38, 0.10);
+            transform: scale(1);
+            transition: 0.2s all;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            }
+            &_icon{
+                background-color: white;
+                padding: 0.75rem;
+            }
+            &_about{
+                @include flexBox (column, space-between, flex-start, 0.5rem);
+                .course_name{
+                    font-weight: 500;
+                    line-height: 1.375rem;
+                }
+                .members{
+                    line-height: 1.375rem; /* 157.143% */
+                    letter-spacing: -0.00875rem;
+                    color: #6E7485;
+                    font-size: 0.875rem;
+                }
+            }
+        }
+        .cpu{
+            background-color: #EBEBFF;
+        }
+        .handshake{
+            background-color: #E1F7E3;
+        }
+        .creditcard{
+            background-color: #FFF2E5;
+        }
+        .chartbar{
+            background-color: #FFF0F0;
+        }
+        .bugdroid{
+            background-color: #FFFFFF;
+            .category_content_card_icon{
+                background-color: $btn-color;
+            }
+        }
+        .receipt{
+            background-color: #F5F7FA;
+        }
+        .megaphone{
+            background-color: #EBEBFF;
+        }
+        .camera{
+            background-color: #F5F7FA;
+        }
+        .package{
+            background-color: #FFF2E5;
+        }
+        .pen{
+            background-color: #FFEEE8;
+        }
+        .firstaidkit{
+            background-color: #E1F7E3;
+        }
+        .headphone{
+            background-color: #FFF2E5;
+        }
+    }
+    &_more{
+        @include flexBox(row, null, center, 0.75rem);
+        &_text{
+            p{
+                font-size: 0.875rem;
+                line-height: 1.375rem; 
+                letter-spacing: -0.00875rem;
+                color: #4E5566;
+            }
+        }
+        &_link{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: $btn-color;
+            cursor: pointer;
+            a{
+                color: $btn-color;
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 1.25rem;
+                letter-spacing: -0.00875rem;
+            }
+        }
+    }
+}
+
+.courses{
+    &_top{
+        padding: 5rem 10%;
+        background-color: #F5F7FA;
+        &_best-selling{
+            @include flexBox(column, space-between, center, 2.5rem);
+            &_heading{
+                text-align: center;
+                font-size: 2.5rem;
+                font-weight: 600;
+                line-height: 3rem;
+                letter-spacing: -0.025rem;
+            }
+            &_cards{
+                @include flexBox (row, center, null, 1.56rem);
+                flex-wrap: wrap;
+                &_card{
+                    width: 220px;
+                    background-color: white;
+                    @include flexBox (column, space-between, flex-start, 1rem);
+                    .img{
+                        img{
+                            width: 220px;
+                            height: 100%;
+                        }
+                    }
+                    .about-course{
+                        padding: 0 0.88rem;
+                        @include flexBox (column, center, flex-start, 0.62rem);
+                        .about-course_cost{
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            a{
+                                padding: 0.25rem 0.38rem;
+                                font-size: 0.625rem;
+                                font-weight: 500;
+                                line-height: 0.75rem;
+                                text-transform: uppercase;
+                            }
+                            span{
+                                font-weight: 600;
+                                line-height: 1.375rem;
+                                color: $btn-color;
+                            }
+                            .design{
+                                background-color: #FFEEE8;
+                                color: #993D20;
+                            }
+                            .development{
+                                background-color: #EBEBFF;
+                                color: #342F98;
+                            }
+                            .business{
+                                background-color: #E1F7E3;
+                                color:#15711F;
+                            }
+                            .marketing{
+                                background-color: #EBEBFF;
+                                color: #342F98;
+                            }
+                            .it{
+                                background-color: #FFF0F0;
+                                color: #882929;
+                            }
+                            .music{
+                                background-color: #FFF2E5;
+                                color: #65390C;
+                            }
+                            .health{
+                                background-color: #E1F7E3;
+                                color: #15711F;
+                            }
+                            .lifestyle{
+                                background-color: #FFF2E5;
+                                color: #65390C;
+                            }
+                        }
+                        .about-course_text{
+                            width: 100%;
+                            font-size: 0.875rem;
+                            font-weight: 500;
+                            line-height: 1.25rem;
+                            letter-spacing: -0.00875rem;
+                            color: $text;
+                            height: 3rem;
+                        }
+                    }
+                    .border{
+                        @extend %border;
+                    }
+                    .rating{
+                        width: 100%;
+                        @include flexBox (row, space-between, center, null);
+                        padding: 0 0.8rem;
+                        box-sizing: border-box;
+                        span{
+                            font-size: 0.875rem;
+                            font-weight: 500;
+                            line-height: 1.25rem;
+                            letter-spacing: -0.00875rem;
+                            color: #4E5566;
+                        }
+                        span.student{
+                            color: $menu-gray;
+                            font-weight: 400;
+                            line-height: 1.375rem;
+                        }
+                        .rating_star{
+                            display: flex;
+                            align-items: center;
+                            gap: 0.25rem;
+                        }
+                    }
+                    transform: scale(1);
+                    transition: 0.2s all;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.2);
+                        z-index: 2;
+                        box-shadow: rgb(218, 122, 37) 0px 20px 30px -10px;
+                    }
+
+                }
+            }
+        }
+    }
+    &_bottom{
+        padding: 5rem 7%;
+        &_feature{
+            margin-top: -8rem;
+            padding:  4% 4% ;
+            background-color: white;
+            border: 1px solid #E9EAF0;
+            @include flexBox (column, center, space-between, 2.5rem);
+            &_heading{
+                display: flex;
+                justify-content: space-between;
+                p.pharagraph-heading{
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    line-height: 3rem;
+                    letter-spacing: -0.025rem;
+                    color: $text;
+
+                }
+                p.headingInfo{
+                    width: 35%;
+                    font-size: 0.875rem;
+                    font-weight: 400;
+                    line-height: 1.375rem;
+                    letter-spacing: -0.00875rem;
+                    color: #4E5566;
+                }
+            }
+
+            &_cards{
+                @include flexBox (row, space-between, null,1.5rem);
+                flex-wrap: wrap;
+                &_card{
+                    max-width: 540px;
+                    min-width: 250px;
+                    display: flex;
+                    border: 1px solid #E9EAF0;
+                    transform: scale(1);
+                    transition: 0.2s all;
+                    cursor: pointer;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    &:hover{
+                        transform: scale(1.1);
+                        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                    }
+                    &_img{
+                        img{
+                            width: 190px;
+                            height: 100%;
+                        }
+                    }
+                    &_info{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.5rem;
+                        padding: 0.5rem 0;
+                        &_heading{
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 0 0.75rem;
+                            .text{
+                                padding: 0.25rem 0.35rem;
+                                a{
+                                    font-size: 0.625rem;
+                                    font-weight: 500;
+                                    line-height: 0.75rem;
+                                    text-transform: uppercase;
+                                }
+
+                            }
+                            .health{
+                                background-color: #E1F7E3;
+                                a{
+                                    color: #15711F;
+                                }
+                            }
+                            .personal{
+                                background-color: #FFEEE8;
+                                a{
+                                    color: #993D20;
+                                }
+                            }
+                            .productiv{
+                                background-color: #F5F7FA;
+                                color: $text;
+                            }
+                            .music{
+                                background-color: #FFF2E5;
+                                a{
+                                    color: #65390C;
+                                }
+                            }
+
+                            .cost{
+                                span{
+                                    font-size: 1.125rem;
+                                    line-height: 1.5rem;
+                                    letter-spacing: -0.01688rem;
+                                    color: $text;
+                                }
+                                span.discount{
+                                    text-decoration: line-through;
+                                    font-size: 0.875rem;
+                                    line-height: 1.5rem;
+                                    color: #A1A5B3;
+                                }
+                            }
+                        }
+                        &_about{
+                            padding: 0 0.75rem;
+                            font-weight: 500;
+                            line-height: 1.375rem;
+                            color: $text;
+                            cursor: pointer;
+                            &:hover{
+                                color: $btn-color;
+                            }
+                        }
+                        &_rank{
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 0 0.75rem;
+                            .profile{
+                                display: flex;
+                                align-items: center;
+                                gap: 0.75rem;
+                                .icon{
+                                    position: relative;
+                                    width: 1.75rem;
+                                    height: 1.75rem;
+                                    background-color: rgba(179, 248, 167, 0.553);
+                                    border-radius: 50%;
+                                    img{
+                                        @extend %center;
+                                    }
+                                }
+                                .first-name{
+                                    font-size: 0.875rem;
+                                    line-height: 1.375rem;
+                                    letter-spacing: -0.00875rem;
+                                    color: #4E5566;
+                                }
+                            }
+                            .rating{
+                                @include flexBox (row, null, center, 0.3rem);
+                                .rating-num{
+                                    font-size: 0.875rem;
+                                    font-weight: 500;
+                                    line-height: 1.25rem;
+                                    letter-spacing: -0.00875rem;
+                                    color: $text;
+                                    .members{
+                                        font-size: 0.875rem;
+                                        line-height: 1.375rem;
+                                        letter-spacing: -0.00875rem;
+                                        color: $menu-gray;                                  
+                                    }
+                                }
+                            }
+                        }
+                        &_border{
+                            @extend %border;
+                        }
+                        &_statistics{
+                            padding: 0 0.75rem;
+                            @include flexBox(row, space-between, center, null);
+                            span{
+                                font-size: 0.875rem;
+                                line-height: 1.375rem;
+                                letter-spacing: -0.00875rem;
+                            }
+                            .students{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                gap: 0.37rem;
+                                .students-num{
+                                    @include flexBox(row, null, center, 0.1rem);
+                                    .members{
+                                        font-weight: 500;
+                                        line-height: 1.25rem;
+                                        color: #4E5566;
+                                    }
+                                    .students-text{
+                                        color: $menu-gray;
+                                    }
+                                }
+                            }
+                            .level{
+                                @include flexBox (row, null, center, 0.1rem);
+                                span{
+                                    color: #4E5566;
+                                }
+                            }
+                            .hour{
+                                @include flexBox (row, null, center, 0.1rem);
+                                span{
+                                    color: #4E5566;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &_added{
+            padding:  4% 4% ;
+            @include flexBox(column, center, center, 3.2rem);
+            &_heading{
+                p{
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    line-height: 3rem;
+                    letter-spacing: -0.025rem;
+                    color: $text;
+                }
+            }
+            &_container{
+                @include flexBox(row, center, center, 1.5rem);
+                flex-wrap: wrap;
+                &_card{
+                    &_front{
+                        width: 280px;
+                        // position: absolute;
+                        @include flexBox (column, space-between, space-between, 0.88rem);
+                        border: 1px solid #E9EAF0;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                        padding-bottom: 0.88rem;
+                        transform: rotateY(0deg);
+                        backface-visibility: hidden;
+                        transition: 1s all;
+                        .main-img{
+                            width: 280px;
+                        }
+                        &_info{
+                            padding: 0 1.12rem;
+                            @include flexBox(column, space-between, space-between, 0.88rem);
+                            &_heading{
+                                display: flex;
+                                justify-content: space-between;
+                                .course-name{
+                                    @extend %course-name;
+                                }
+                                .design{
+                                    background-color: #FFEEE8;
+                                    color: #993D20;
+                                }
+                                .cost{
+                                    font-size: 1.125rem;
+                                    font-weight: 500;
+                                    line-height: 1.5rem;
+                                    color: $btn-color;
+                                }
+                            }
+                            &_text{
+                                font-weight: 500;
+                                line-height: 1.375rem;
+                                color: $text;
+                            }
+                            &_rating{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                span{
+                                    font-size: 0.875rem;
+                                    font-weight: 500;
+                                    line-height: 1.25rem;
+                                    letter-spacing: -0.00875rem;
+                                    color: #4E5566;
+                                }
+                                .rank{
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                .members{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0.3rem;
+                                }
+                                .student{
+                                    line-height: 1.375rem;
+                                    color: $menu-gray;
+                                }
+                            }
+                        }
+                    }
+                    &_back{
+                        position: absolute;
+                        top: -15%;
+                        left: -15%;
+                        background-color: white;
+                        border: 1px solid rgba(216, 216, 216, 0.728);
+                        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+                        width: 400px;
+                        transform: rotateY(-180deg);
+                        backface-visibility: hidden;
+                        transition: 1s all;
+
+                        @include flexBox(column, space-between, space-between, 1rem);
+                        &_top{
+                            padding: 1.1rem;
+                            @include flexBox (column, space-between, space-between, 0.88rem);
+                            .design{
+                                span{
+                                    background-color: #FFEEE8;
+                                    color: #993D20;
+                                    @extend %course-name;
+                                }
+                            }
+                            .it{
+                                span{
+                                    background-color: #FFF0F0;
+                                    color: #882929;
+                                    @extend %course-name;
+                                }
+                            }
+                            .development{
+                                span{
+                                    background-color: #EBEBFF;
+                                    color: #342F98;
+                                    @extend %course-name;
+                                }
+                            }
+                            .health{
+                                span{
+                                    background-color: #E1F7E3;
+                                    color: #15711F;
+                                    @extend %course-name;
+                                }
+                            }
+                            .course-text{
+                                font-size: 1rem;
+                                font-weight: 500;
+                                line-height: 1.375rem;
+                                color: $text;
+                            }
+                            .profile{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                .user{
+                                    .icon{
+                                        position: relative;
+                                        width: 1.8rem;
+                                        height: 1.8rem;
+                                        background-color: rgba(206, 206, 206, 0.742);
+                                        border-radius: 50%;
+                                        img{
+                                            @extend %center;
+                                        }
+                                    }
+                                    @include flexBox(row, space-between, center, 0.2rem);
+                                    .about-user{
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 0.1rem;
+                                        span{
+                                            font-size: 0.875rem;
+                                            line-height: 1.375rem;
+                                            letter-spacing: -0.00875rem;
+                                            color: $menu-gray;
+                                        }
+                                        span.user-name{
+                                            font-size: 0.875rem;
+                                            font-weight: 500;
+                                            line-height: 1.25rem;
+                                            letter-spacing: -0.00875rem;
+                                            color: $text;
+                                        }
+                                    }
+                                }
+                                .rank{
+                                    display: flex;
+                                    align-items:center;
+                                    gap: 0.2rem;
+                                    .user-num{
+                                        font-size: 0.8rem;
+                                        color: $menu-gray;
+                                    }
+                                }
+                            }
+                            .about-course{
+                                display: flex;
+                                justify-content: space-between;
+                                .course-member{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0.1rem;
+                                }
+                                .course-level{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0.1rem;
+                                }
+                                .course-hour{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0.1rem;
+                                }
+                            }
+                            .course-cost{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                .amount{
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0.3rem;
+                                    span.cost{
+                                        font-size: 1.5rem;
+                                        color: $text;
+                                    }
+                                    .del{
+                                        color: $menu-gray;
+                                        text-decoration: line-through;
+                                        font-size: 0.88rem;
+                                    }
+                                    .discount{
+                                        padding: 0.2rem;
+                                        background-color: #FFEEE8;
+                                        color: $btn-color;
+                                        font-size: 0.88rem;
+                                    }
+                                }
+                                .liked{
+                                    position: relative;
+                                    width: 2rem;
+                                    height: 2rem;
+                                    background-color: #FFEEE8;
+                                    color: $btn-color;
+                                    i{
+                                        @extend %center;
+                                        font-size: 1.3rem;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+                        }
+                        .border-line{
+                            height: 1px;
+                            background-color: #dfdfdf;
+                        }
+                        &_middle{
+                            padding: 1.1rem;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 0.5rem;
+                            .list{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 0.5rem;
+                                p{
+                                    display: flex;
+                                    align-items: baseline;
+                                    gap: 0.5rem;
+                                    span{
+                                        color: #6E7485;
+                                        font-size: 0.875rem;
+                                        line-height: 1.375rem;
+                                        letter-spacing: -0.00875rem;
+                                    }
+                                    i{
+                                        color: #23BD33;
+                                    }
+                                }
+                            }
+                        }
+                        &_bottom{
+                            padding: 1.1rem;
+                            .buttons{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 2rem;
+                                text-align: center;
+                                .add-to-cart{
+                                    cursor: pointer;
+                                    background-color: $btn-color;
+                                    a{
+                                        @include flexBox (row, center, center, 1rem);
+                                        color: white;
+                                        font-weight: 600;
+                                        line-height: 3rem;
+                                        letter-spacing: -0.008rem;
+                                        text-transform: capitalize;
+                                        padding: 0.3rem;
+                                    }
+                                }
+                                .course-detail{
+                                    background-color: $btn-bg;
+                                    cursor: pointer;
+                                    a{
+                                        @include flexBox (row, center, center, 1rem);
+                                        color: $btn-color;
+                                        font-weight: 600;
+                                        line-height: 3rem;
+                                        letter-spacing: -0.008rem;
+                                        text-transform: capitalize;
+                                        padding: 0.3rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .card-1{
+                    position: relative;
+                    perspective: 1500px;
+                    cursor: pointer;
+
+                    &:hover{
+                        .front-card{
+                            transform: rotateY(180deg);
+                        }
+                        .back-card{
+                            transform: rotateY(0deg);
+                        }
+                       
+                    }
+                }
+                .card-2{
+                    position: relative;
+                    perspective: 1500px;
+                    cursor: pointer;
+
+                    &:hover{
+                        .front-card{
+                            transform: rotateY(180deg);
+                        }
+                        .back-card{
+                            transform: rotateY(0deg);
+                        }
+                       
+                    }
+                }
+                .card-3{
+                    position: relative;
+                    perspective: 1500px;
+                    cursor: pointer;
+
+                    &:hover{
+                        .front-card{
+                            transform: rotateY(180deg);
+                        }
+                        .back-card{
+                            transform: rotateY(0deg);
+                        }
+                       
+                    }
+                }
+                .card-4{
+                    position: relative;
+                    perspective: 1500px;
+                    cursor: pointer;
+
+                    &:hover{
+                        .front-card{
+                            transform: rotateY(180deg);
+                        }
+                        .back-card{
+                            transform: rotateY(0deg);
+                        }
+                       
+                    }
+                }
+            }
+        }
+    }
+}

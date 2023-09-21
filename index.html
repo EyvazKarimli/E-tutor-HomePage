@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Tutor - Learning Management System (Community)</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <input type="checkbox" id="check-menu">
+
+    <div class="navbar">
+        <div class="navbar_menu">
+            <label for="check-menu" class="close-menu"> <i class="fa-solid fa-xmark"></i></label>
+            <ul>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Became an Instructor</a></li>
+            </ul>
+        </div>
+
+        <div class="navbar_buttons">
+            <a href="#">Create Account</a>
+            <a href="#">Sing In</a>
+        </div>
+        <div class="navbar_search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" placeholder="What do you want...">
+        </div>
+    </div>
+    <label for="check-menu" class="full-page"></label>
+
+
+<!-- "header" start from here and it includes menu, sing in and Create Account buttons, search bar , and text about our mission-->
+    <header>
+        <nav>
+            <div class="top-nav">
+                <div class="top-nav_menu">
+                    <label for="check-menu" class="top-nav_menu_label"> <i class="fa-solid fa-bars"></i></label>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Became an Instructor</a></li>
+                    </ul>
+                </div>
+                <div class="top-nav_options">
+                    <select name="currency" id="currency">
+                        <option value="1">USD</option>
+                        <option value="2">EUR</option>
+                        <option value="3">RUB</option>
+                        <option value="4">TRY</option>
+                        <option value="5">AZN</option>
+                    </select>
+                    <select name="lang" id="lang">
+                        <option value="1">English</option>
+                        <option value="2">Russian</option>
+                        <option value="3">Azerbaijani</option>
+                    </select>
+                    <div class="select-container">
+                        <select>
+                            <option value="1">Browse</option>
+                            <option value="2">Library</option>
+                            <option value="3">Documentation</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <div class="bottom-nav_left-side">
+                    <div class="bottom-nav_left-side_logo">
+                        <img src="./assets/image/header/GraduationCap.svg" alt="logo">
+                        <p>E-Tutor</p>
+                    </div>
+                    <div class="bottom-nav_left-side_search">
+                        <div class="select-container">
+                        <select>
+                            <option value="1">Browse</option>
+                            <option value="2">Library</option>
+                            <option value="3">Documentation</option>
+                        </select>
+                        </div>
+                        <div class="bottom-nav_left-side_search_bar">
+                            <label for="magnifying_glass"><img src="./assets/image/header/MagnifyingGlass.svg" alt="magnifying glass"></label>
+                            <input type="search" id="magnifying_glass" placeholder="What do you want to learn..." autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-nav_right-side">
+                    <div class="bottom-nav_right-side_icons">
+                        <i class="fa-regular fa-bell"></i>
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="bottom-nav_right-side_buttons">
+                        <a href="#">Create Account</a>
+                        <a href="#">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="heading">
+            <div class="heading_left-side">
+                <div class="heading_left-side_container">
+                    <div class="heading_left-side_container_content">
+                        <p class="catchword">Learn with expert anytime anywhere</p>
+                    </div>
+                    <div class="heading_left-side_container_content">
+                        <p class="mision">Our mision is to help people to find the best course online and learn with expert anytime, anywhere.</p>
+                    </div>
+                    <div class="heading_left-side_container_content">
+                        <div class="heading_left-side_container_content_button">
+                            <a href="#">Creat Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="heading_right-side">
+                <div class="heading_right-side_img">
+                    <img src="./assets/image/header/Images.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- "header" has been completed successfully. -->
+    
+    
+    <main>
+        <section class="category">
+
+            <div class="category_heading">
+                <div class="category_heading_text">
+                    <p>Browse top category</p>
+                </div>
+            </div>
+
+            <div class="category_content">
+                
+                <div class="category_content_card cpu">
+                    <div class="category_content_card_icon ">
+                        <img src="./assets/image/main/category/Cpu.svg" alt="cpu">
+                    </div>
+                    <div class="category_content_card_about">
+                        <p class="course_name">Label</p>
+                        <p class="members">63,476 Courses</p>
+                    </div>
+                </div>
+
+                <div class="category_content_card handshake">
+                    <div class="category_content_card_icon">
+                        <img src="./assets/image/main/category/Handshake.svg" alt="Handshake">
+                    </div>
+                    <div class="category_content_card_about">
+                        <p class="course_name">Business</p>
+                        <p class="members">52,822 Courses</p>
+                    </div>
+                </div>
+
+                <div class="category_content_card creditcard">
+                    <div class="category_content_card_icon">
+                        <img src="./assets/image/main/category/CreditCard.svg" alt="CreditCard">
+                    </div>
+                    <div class="category_content_card_about">
+                        <p class="course_name">Finance & Accounting</p>
+                        <p class="members">33,841 Courses</p>
+                    </div>
+                </div>
+
+                <div class="category_content_card chartbar">
+                    <div class="category_content_card_icon">
+                        <img src="./assets/image/main/category/ChartBarHorizontal.svg" alt="ChartBarHorizontal">
+                    </div>
+                    <div class="category_content_card_about">
+                        <p class="course_name">IT & Software</p>
+                        <p class="members">22,649 Courses</p>
+                    </div>
+                </div>
+
+                <div class="category_content_card bugdroid">
+                    <div class="category_content_card_icon ">
+                        <img src="./assets/image/main/category/BugDroid.svg" alt="BugDroid">
+                    </div>
+                    <div class="category_content_card_about">
+                        <p class="course_name">Personal Development</p>
+                        <p class="members">20,126 Courses</p>
+                    </div>
+                </div>
+
+                <div class="category_content_card receipt">
+                    <div class="category_content_card_icon ">
+                        <img src="./assets/image/main/category/Receipt.svg" alt="Receipt">
+                    </div>
+                    <div class="category_content_card_about">
+                        <p class="course_name">Office Productivity</p>
+                        <p class="members">13,932 Courses</p>
+                    </div>
+                </div>
+
+                <div class="category_content_card megaphone">
+                    <div class="category_content_card_icon ">
+                        <img src="./assets/image/main/category/MegaphoneSimple.svg" alt="MegaphoneSimple">
+                    </div>
+                    <div class="category_content_card_about">
+                        <p class="course_name">Marketing</p>
+                        <p class="members">12,068 Courses</p>
+                    </div>
+                </div>
+
+                <div class="category_content_card camera">
+                    <div class="category_content_card_icon">
+                        <img src="./assets/image/main/category/Camera.svg" alt="Camera">
+                    </div>
+                    <div class="category_content_card_about">
+                        <p class="course_name">Photography & Video</p>
+                        <p class="members">6,196 Courses</p>
+                    </div>
+                </div>
+
+                <div class="category_content_card package">
+                    <div class="category_content_card_icon">
+                        <img src="./assets/image/main/category/Package.svg" alt="Package">
+                    </div>
+                    <div class="category_content_card_about">
+                        <p class="course_name">Lifestyle</p>
+                        <p class="members">2,736 Courses</p>
+                    </div>
+                </div>
+
+                <div class="category_content_card pen">
+                    <div class="category_content_card_icon">
+                        <img src="./assets/image/main/category/PenNib.svg" alt="pen">
+                    </div>
+                    <div class="category_content_card_about">
+                        <p class="course_name">Design</p>
+                        <p class="members">2,600 Courses</p>
+                    </div>
+                </div>
+
+                <div class="category_content_card firstaidkit">
+                    <div class="category_content_card_icon ">
+                        <img src="./assets/image/main/category/FirstAidKit.svg" alt="FirstAidKit">
+                    </div>
+                    <div class="category_content_card_about">
+                        <p class="course_name">Health & Fitness</p>
+                        <p class="members">1,678 Courses</p>
+                    </div>
+                </div>
+
+                <div class="category_content_card headphone">
+                    <div class="category_content_card_icon ">
+                        <img src="./assets/image/main/category/Headphones.svg" alt="Headphones">
+                    </div>
+                    <div class="category_content_card_about">
+                        <p class="course_name">Music</p>
+                        <p class="members">959 Courses</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="category_more">
+                <div class="category_more_text">
+                    <p>We have more category & subcategory.</p>
+                </div>
+                <div class="category_more_link">
+                    <a href="#">Browse All</a> <span>&#8594;</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="courses">
+
+            <div class="courses_top">
+                <div class="courses_top_best-selling">
+                    <div class="courses_top_best-selling_heading">
+                        <p>Best selling courses</p>
+                    </div>
+
+                    <div class="courses_top_best-selling_cards">
+
+                        <div class="courses_top_best-selling_cards_card">
+                            <div class="img">
+                                <img src="./assets/image/main/courses/Course Images.png" alt="">
+                            </div>
+                            <div class="about-course">
+                                <div class="about-course_cost">
+                                    <a href="#" class="design">DESIGN</a>
+                                    <span>$57</span>
+                                </div>
+                                <div class="about-course_text">
+                                    <p>Machine Learning A-Z™: Hands-On Python & R In Data...</p>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="rating">
+                                <div class="rating_star">
+                                    <img src="./assets/image/main/courses/Star.svg" alt="star">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="rating_members">
+                                    <span class="member-number">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses_top_best-selling_cards_card">
+                            <div class="img">
+                                <img src="./assets/image/main/courses/Course Images (1).png" alt="">
+                            </div>
+                            <div class="about-course">
+                                <div class="about-course_cost">
+                                    <a href="#" class="development">DEVELOPMENTS</a>
+                                    <span>$57</span>
+                                </div>
+                                <div class="about-course_text">
+                                    <p>The Complete 2021 Web Development Bootcamp</p>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="rating">
+                                <div class="rating_star">
+                                    <img src="./assets/image/main/courses/Star.svg" alt="star">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="rating_members">
+                                    <span class="member-number">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses_top_best-selling_cards_card">
+                            <div class="img">
+                                <img src="./assets/image/main/courses/Course Images (2).png" alt="">
+                            </div>
+                            <div class="about-course">
+                                <div class="about-course_cost">
+                                    <a href="#" class="business">BUSINESS</a>
+                                    <span>$57</span>
+                                </div>
+                                <div class="about-course_text">
+                                    <p>Learn Python Programming Masterclass</p>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="rating">
+                                <div class="rating_star">
+                                    <img src="./assets/image/main/courses/Star.svg" alt="star">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="rating_members">
+                                    <span class="member-number">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses_top_best-selling_cards_card">
+                            <div class="img">
+                                <img src="./assets/image/main/courses/Course Images (3).png" alt="">
+                            </div>
+                            <div class="about-course">
+                                <div class="about-course_cost">
+                                    <a href="#" class="marketing">MARKETING</a>
+                                    <span>$57</span>
+                                </div>
+                                <div class="about-course_text">
+                                    <p>The Complete Digital Marketing Course - 12 Courses in 1</p>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="rating">
+                                <div class="rating_star">
+                                    <img src="./assets/image/main/courses/Star.svg" alt="star">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="rating_members">
+                                    <span class="member-number">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses_top_best-selling_cards_card">
+                            <div class="img">
+                                <img src="./assets/image/main/courses/Course Images (4).png" alt="">
+                            </div>
+                            <div class="about-course">
+                                <div class="about-course_cost">
+                                    <a href="#" class="it">IT & Software</a>
+                                    <span>$57</span>
+                                </div>
+                                <div class="about-course_text">
+                                    <p>Reiki Level I, II and Master/Teacher Program</p>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="rating">
+                                <div class="rating_star">
+                                    <img src="./assets/image/main/courses/Star.svg" alt="star">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="rating_members">
+                                    <span class="member-number">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses_top_best-selling_cards_card">
+                            <div class="img">
+                                <img src="./assets/image/main/courses/Course Images (5).png" alt="">
+                            </div>
+                            <div class="about-course">
+                                <div class="about-course_cost">
+                                    <a href="#" class="music">MUSIC</a>
+                                    <span>$57</span>
+                                </div>
+                                <div class="about-course_text">
+                                    <p>The Complete Foundation Stock Trading Course</p>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="rating">
+                                <div class="rating_star">
+                                    <img src="./assets/image/main/courses/Star.svg" alt="star">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="rating_members">
+                                    <span class="member-number">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses_top_best-selling_cards_card">
+                            <div class="img">
+                                <img src="./assets/image/main/courses/Course Images (6).png" alt="">
+                            </div>
+                            <div class="about-course">
+                                <div class="about-course_cost">
+                                    <a href="#" class="marketing">MARKETING</a>
+                                    <span>$57</span>
+                                </div>
+                                <div class="about-course_text">
+                                    <p>Beginner to Pro in Excel: Financial Modeling and Valuati...</p>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="rating">
+                                <div class="rating_star">
+                                    <img src="./assets/image/main/courses/Star.svg" alt="star">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="rating_members">
+                                    <span class="member-number">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses_top_best-selling_cards_card">
+                            <div class="img">
+                                <img src="./assets/image/main/courses/Course Images (7).png" alt="">
+                            </div>
+                            <div class="about-course">
+                                <div class="about-course_cost">
+                                    <a href="#" class="health">Health & Fitness</a>
+                                    <span>$57</span>
+                                </div>
+                                <div class="about-course_text">
+                                    <p>The Python Mega Course: Build 10 Real World Applications</p>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="rating">
+                                <div class="rating_star">
+                                    <img src="./assets/image/main/courses/Star.svg" alt="star">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="rating_members">
+                                    <span class="member-number">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses_top_best-selling_cards_card">
+                            <div class="img">
+                                <img src="./assets/image/main/courses/Course Images (8).png" alt="">
+                            </div>
+                            <div class="about-course">
+                                <div class="about-course_cost">
+                                    <a href="#" class="design">DESIGN</a>
+                                    <span>$57</span>
+                                </div>
+                                <div class="about-course_text">
+                                    <p>Copywriting - Become a Freelance Copywriter, your ow...</p>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="rating">
+                                <div class="rating_star">
+                                    <img src="./assets/image/main/courses/Star.svg" alt="star">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="rating_members">
+                                    <span class="member-number">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses_top_best-selling_cards_card">
+                            <div class="img">
+                                <img src="./assets/image/main/courses/Course Images (9).png" alt="">
+                            </div>
+                            <div class="about-course">
+                                <div class="about-course_cost">
+                                    <a href="#" class="lifestyle">LIFESTYLE</a>
+                                    <span>$57</span>
+                                </div>
+                                <div class="about-course_text">
+                                    <p>Google Analytics Certification - Learn How To Pass The Exam</p>
+                                </div>
+                            </div>
+                            <div class="border"></div>
+                            <div class="rating">
+                                <div class="rating_star">
+                                    <img src="./assets/image/main/courses/Star.svg" alt="star">
+                                    <span>5.0</span>
+                                </div>
+                                <div class="rating_members">
+                                    <span class="member-number">265.7K</span>
+                                    <span class="student">students</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="courses_bottom">
+
+                <div class="courses_bottom_feature">
+                    <div class="courses_bottom_feature_heading">
+                        <p class="pharagraph-heading">Our feature courses</p>
+                        <p class="headingInfo">Vestibulum sed dolor sed diam mollis maximus vel nec dolor. Donec varius purus et eleifend porta.</p>
+                    </div>
+                    <div class="courses_bottom_feature_cards">
+
+                        <div class="courses_bottom_feature_cards_card">
+                            <div class="courses_bottom_feature_cards_card_img">
+                                <img src="/assets/image/main/courses/Course Images (3).png" alt="'image">
+                            </div>
+                            <div class="courses_bottom_feature_cards_card_info">
+                                <div class="courses_bottom_feature_cards_card_info_heading">
+                                    <div class="text health"><a href="#">HEALTH & FITNESS</a></div>
+                                    <div class="cost">
+                                        <span>$14.00</span>
+                                        <span class="discount">$26.00</span>
+                                    </div>
+                                </div>
+                                <div class="courses_bottom_feature_cards_card_info_about">
+                                     <p>Investing In Stocks The Complete Course! (13 H...</p>
+                                </div>
+                                <div class="courses_bottom_feature_cards_card_info_rank">
+                                    <div class="profile">
+                                        <div class="icon">
+                                            <img src="./assets/image/main/User.svg" alt="user">
+                                        </div>
+                                        <div class="first-name">Name Surname</div>
+                                    </div>
+                                    <div class="rating">
+                                        <div class="rating-star">
+                                            <img src="./assets/image/main/Star.svg" alt="star">
+                                        </div>
+                                        <div class="rating-num">
+                                            <span class="star-num">5.0</span>
+                                            <span class="members">(357,914)</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="courses_bottom_feature_cards_card_info_border"></div>
+                                <div class="courses_bottom_feature_cards_card_info_statistics">
+                                    <div class="students">
+                                        <div class="students-icon">
+                                            <img src="./assets/image/main/User.svg" alt="user">
+                                        </div>
+                                        <div class="students-num">
+                                            <span class="members">265.7K</span>
+                                            <div class="students-text"> students</div>
+                                        </div>
+                                    </div>
+                                    <div class="level">
+                                        <div class="level-icon">
+                                            <img src="./assets/image/main/bar-chart.svg" alt="bar-chart">
+                                        </div>
+                                        <div class="level-text"><span>Beginner</span></div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="hour-icon">
+                                            <img src="./assets/image/main/Clock.svg" alt="clock">
+                                        </div>
+                                        <div class="hour-text">
+                                            <span>6 hour</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses_bottom_feature_cards_card">
+                            <div class="courses_bottom_feature_cards_card_img">
+                                <img src="/assets/image/main/courses/Course Images (4).png" alt="'image">
+                            </div>
+                                <div class="courses_bottom_feature_cards_card_info">
+                                    <div class="courses_bottom_feature_cards_card_info_heading">
+                                            <div class="text personal"><a href="#">PERSONAL DEVELOPMENT</a></div>
+                                            <div class="cost">
+                                                <span>$14.00</span>
+                                                <span class="discount">$26.00</span>
+                                            </div>
+                                    </div>
+                                    <div class="courses_bottom_feature_cards_card_info_about">
+                                        <p>Google Analytics Certification - Learn How To...</p>
+                                    </div>
+                                    <div class="courses_bottom_feature_cards_card_info_rank">
+                                        <div class="profile">
+                                            <div class="icon">
+                                                <img src="./assets/image/main/User.svg" alt="user">
+                                            </div>
+                                            <div class="first-name">Name Surname</div>
+                                        </div>
+                                        <div class="rating">
+                                            <div class="rating-star">
+                                                <img src="./assets/image/main/Star.svg" alt="star">
+                                            </div>
+                                            <div class="rating-num">
+                                                <span class="star-num">5.0</span>
+                                                <span class="members">(357,914)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="courses_bottom_feature_cards_card_info_border"></div>
+                                    <div class="courses_bottom_feature_cards_card_info_statistics">
+                                        <div class="students">
+                                            <div class="students-icon">
+                                                <img src="./assets/image/main/User.svg" alt="user">
+                                            </div>
+                                            <div class="students-num">
+                                                <span class="members">265.7K</span>
+                                                <span class="students-text"> students</span>
+                                            </div>
+                                        </div>
+                                        <div class="level">
+                                            <div class="level-icon">
+                                                <img src="./assets/image/main/bar-chart.svg" alt="bar-chart">
+                                            </div>
+                                            <div class="level-text"><span>Beginner</span></div>
+                                        </div>
+                                        <div class="hour">
+                                            <div class="hour-icon">
+                                                <img src="./assets/image/main/Clock.svg" alt="clock">
+                                            </div>
+                                            <div class="hour-text">
+                                                <span>6 hour</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+                        <div class="courses_bottom_feature_cards_card">
+                            <div class="courses_bottom_feature_cards_card_img">
+                                <img src="/assets/image/main/courses/Course Images (8).png" alt="'image">
+                            </div>
+                                <div class="courses_bottom_feature_cards_card_info">
+                                    <div class="courses_bottom_feature_cards_card_info_heading">
+                                            <div class="text productiv"><a href="#">PRODUCTIVITY</a></div>
+                                            <div class="cost">
+                                                <span>$14.00</span>
+                                                <span class="discount">$26.00</span>
+                                            </div>
+                                    </div>
+                                    <div class="courses_bottom_feature_cards_card_info_about">
+                                        <p>Adobe XD for Web Design: Essential Principles</p>
+                                    </div>
+                                    <div class="courses_bottom_feature_cards_card_info_rank">
+                                        <div class="profile">
+                                            <div class="icon">
+                                                <img src="./assets/image/main/User.svg" alt="user">
+                                            </div>
+                                            <div class="first-name">Name Surname</div>
+                                        </div>
+                                        <div class="rating">
+                                            <div class="rating-star">
+                                                <img src="./assets/image/main/Star.svg" alt="star">
+                                            </div>
+                                            <div class="rating-num">
+                                                <span class="star-num">5.0</span>
+                                                <span class="members">(357,914)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="courses_bottom_feature_cards_card_info_border"></div>
+                                    <div class="courses_bottom_feature_cards_card_info_statistics">
+                                        <div class="students">
+                                            <div class="students-icon">
+                                                <img src="./assets/image/main/User.svg" alt="user">
+                                            </div>
+                                            <div class="students-num">
+                                                <span class="members">265.7K</span>
+                                                <div class="students-text"> students</div>
+                                            </div>
+                                        </div>
+                                        <div class="level">
+                                            <div class="level-icon">
+                                                <img src="./assets/image/main/bar-chart.svg" alt="bar-chart">
+                                            </div>
+                                            <div class="level-text"><span>Beginner</span></div>
+                                        </div>
+                                        <div class="hour">
+                                            <div class="hour-icon">
+                                                <img src="./assets/image/main/Clock.svg" alt="clock">
+                                            </div>
+                                            <div class="hour-text">
+                                                <span>6 hour</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+
+
+                        <div class="courses_bottom_feature_cards_card">
+                            <div class="courses_bottom_feature_cards_card_img">
+                                <img src="/assets/image/main/courses/Course Images (6).png" alt="'image">
+                            </div>
+                                <div class="courses_bottom_feature_cards_card_info">
+                                    <div class="courses_bottom_feature_cards_card_info_heading">
+                                            <div class="text music"><a href="#">MUSIC</a></div>
+                                            <div class="cost">
+                                                <span>$14.00</span>
+                                                <span class="discount">$26.00</span>
+                                            </div>
+                                    </div>
+                                    <div class="courses_bottom_feature_cards_card_info_about">
+                                        <p>The Python Mega Course: Build 10 Real World ...</p>
+                                    </div>
+                                    <div class="courses_bottom_feature_cards_card_info_rank">
+                                        <div class="profile">
+                                            <div class="icon">
+                                                <img src="./assets/image/main/User.svg" alt="user">
+                                            </div>
+                                            <div class="first-name">Name Surname</div>
+                                        </div>
+                                        <div class="rating">
+                                            <div class="rating-star">
+                                                <img src="./assets/image/main/Star.svg" alt="star">
+                                            </div>
+                                            <div class="rating-num">
+                                                <span class="star-num">5.0</span>
+                                                <span class="members">(357,914)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="courses_bottom_feature_cards_card_info_border"></div>
+                                    <div class="courses_bottom_feature_cards_card_info_statistics">
+                                        <div class="students">
+                                            <div class="students-icon">
+                                                <img src="./assets/image/main/User.svg" alt="user">
+                                            </div>
+                                            <div class="students-num">
+                                                <span class="members">265.7K</span>
+                                                <div class="students-text"> students</div>
+                                            </div>
+                                        </div>
+                                        <div class="level">
+                                            <div class="level-icon">
+                                                <img src="./assets/image/main/bar-chart.svg" alt="bar-chart">
+                                            </div>
+                                            <div class="level-text"><span>Beginner</span></div>
+                                        </div>
+                                        <div class="hour">
+                                            <div class="hour-icon">
+                                                <img src="./assets/image/main/Clock.svg" alt="clock">
+                                            </div>
+                                            <div class="hour-text">
+                                                <span>6 hour</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="courses_bottom_added">
+
+                    <div class="courses_bottom_added_heading">
+                        <p>Recently added courses</p>
+                    </div>
+
+
+                    <div class="courses_bottom_added_container">
+
+                        <div class="courses_bottom_added_container_card card-1">
+                            <div class="courses_bottom_added_container_card_front front-card">
+                                <div class="courses_bottom_added_container_card_front_image">
+                                    <img src="./assets/image/main/courses/Course Images (10).png" alt="course" class="main-img">
+                                </div>
+                                <div class="courses_bottom_added_container_card_front_info">
+                                    <div class="courses_bottom_added_container_card_front_info_heading">
+                                        <div class="course-name design">
+                                            <span>Design</span>
+                                        </div>
+                                        <div class="cost">$57</div>
+                                    </div>
+                                    <div class="courses_bottom_added_container_card_front_info_text">
+                                        <p>The Python Mega Course: Build 10 Real World Applications</p>
+                                    </div>
+                                    <div class="courses_bottom_added_container_card_front_info_rating">
+                                        <div class="rank">
+                                            <div class="star">
+                                                <img src="./assets/image/main/Star.svg" alt="star">
+                                            </div>
+                                            <span>5.0</span>
+                                        </div>
+                                        <div class="members">
+                                            <div class="icon">
+                                                <img src="./assets/image/main/User.svg" alt="user">
+                                            </div>
+                                            <div class="members-num">
+                                                <span>265.7K</span>
+                                            </div>
+                                            <div class="members-name">
+                                                <span class="student">students</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses_bottom_added_container_card_back back-card">
+                                <div class="courses_bottom_added_container_card_back_top">
+                                    <div class="course-name design">
+                                        <span>Design</span>
+                                    </div>
+                                    <div class="course-text">
+                                        <p>The Python Mega Course: Build 10 Real World Applications</p>
+                                    </div>
+                                    <div class="profile">
+                                        <div class="user">
+                                            <div class="icon"><img src="./assets/image/main/User.svg" alt="user"></div>
+                                            <div class="about-user">
+                                                <span>Course by</span>
+                                                <span class="user-name">User Userov</span>
+                                            </div>
+                                        </div>
+                                        <div class="rank">
+                                            <img src="./assets/image/main/Star.svg" alt="star">
+                                            <span class="star-num">5.0</span>
+                                            <span class="user-num">(357,914)</span>
+                                        </div>                                       
+                                    </div>
+                                    <div class="about-course">
+                                        <div class="course-member">
+                                            <div class="icon"><img src="./assets/image/main/User.svg" alt="user"></div>
+                                            <div class="members-num"><span>265.7K</span> <span class="user-role">students</span></div>
+                                        </div>
+                                        <div class="course-level">
+                                            <div class="icon"><img src="./assets/image/main/bar-chart.svg" alt="bar-chart"></div>
+                                            <div class="level-text">Beginner</div>
+                                        </div>
+                                        <div class="course-hour">
+                                            <div class="icon"><img src="./assets/image/main/Clock.svg" alt="clock"></div>
+                                            <div class="hour-text"><span>6 hour</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="course-cost">
+                                        <div class="amount">
+                                            <span class="cost">$14.00</span>
+                                            <span class="del">$26.00</span>
+                                            <span class="discount">56% OFF</span>
+                                        </div>
+                                        <div class="liked">
+                                            <div class="icon"><i class="fa-regular fa-heart"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-line"></div>
+                                <div class="courses_bottom_added_container_card_back_middle">
+                                    <div class="heading"><p>WHAT YOU'LL LEARN</p></div>
+                                    <div class="list">
+                                        <p><i class="fa-solid fa-check"></i><span>Learn to use Python professionally, learning both Python 2 and Python 3!</span></p>
+                                        <p><i class="fa-solid fa-check"></i><span>Create game with Python, like Tic Tac Toe and Blackjack!</span></p>
+                                        <p><i class="fa-solid fa-check"></i><span>Create game with Python, like Tic Tac Toe and Blackjack!</span></p>                                       
+                                    </div>
+                                </div>
+                                <div class="border-line"></div>
+                                <div class="courses_bottom_added_container_card_back_bottom">
+                                    <div class="buttons">
+                                        <div class="add-to-cart">
+                                            <a href="#"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                                        </div>
+                                        <div class="course-detail">
+                                            <a href="#">Course Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses_bottom_added_container_card  card-2">
+                            <div class="courses_bottom_added_container_card_front front-card">
+                                <div class="courses_bottom_added_container_card_front_image">
+                                    <img src="./assets/image/main/courses/Course Images (4).png" alt="course" class="main-img">
+                                </div>
+                                <div class="courses_bottom_added_container_card_front_info">
+                                    <div class="courses_bottom_added_container_card_front_info_heading">
+                                        <div class="course-name">
+                                            <span>Design</span>
+                                        </div>
+                                        <div class="cost">$57</div>
+                                    </div>
+                                    <div class="courses_bottom_added_container_card_front_info_text">
+                                        <p>The Python Mega Course: Build 10 Real World Applications</p>
+                                    </div>
+                                    <div class="courses_bottom_added_container_card_front_info_rating">
+                                        <div class="rank">
+                                            <div class="star">
+                                                <img src="./assets/image/main/Star.svg" alt="star">
+                                            </div>
+                                        </div>
+                                        <div class="members">
+                                            <div class="icon">
+                                                <img src="./assets/image/main/User.svg" alt="user">
+                                            </div>
+                                            <div class="members-num">
+                                                <span>265.7K</span>
+                                            </div>
+                                            <div class="members-name">
+                                                <span>students</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses_bottom_added_container_card_back back-card">
+                                <div class="courses_bottom_added_container_card_back_top">
+                                    <div class="course-name it">
+                                        <span>IT & Software</span>
+                                    </div>
+                                    <div class="course-text">
+                                        <p>Facebook Ads & Facebook Marketing MASTERY 2021 Cours...</p>
+                                    </div>
+                                    <div class="profile">
+                                        <div class="user">
+                                            <div class="icon"><img src="./assets/image/main/User.svg" alt="user"></div>
+                                            <div class="about-user">
+                                                <span>Course by</span>
+                                                <span class="user-name">User Userov</span>
+                                            </div>
+                                        </div>
+                                        <div class="rank">
+                                            <img src="./assets/image/main/Star.svg" alt="star">
+                                            <span class="star-num">5.0</span>
+                                            <span class="user-num">(357,914)</span>
+                                        </div>                                       
+                                    </div>
+                                    <div class="about-course">
+                                        <div class="course-member">
+                                            <div class="icon"><img src="./assets/image/main/User.svg" alt="user"></div>
+                                            <div class="members-num"><span>265.7K</span> <span class="user-role">students</span></div>
+                                        </div>
+                                        <div class="course-level">
+                                            <div class="icon"><img src="./assets/image/main/bar-chart.svg" alt="bar-chart"></div>
+                                            <div class="level-text">Beginner</div>
+                                        </div>
+                                        <div class="course-hour">
+                                            <div class="icon"><img src="./assets/image/main/Clock.svg" alt="clock"></div>
+                                            <div class="hour-text"><span>6 hour</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="course-cost">
+                                        <div class="amount">
+                                            <span>$14.00</span>
+                                            <span class="del">$26.00</span>
+                                            <span class="discount">56% OFF</span>
+                                        </div>
+                                        <div class="liked">
+                                            <div class="icon"><i class="fa-regular fa-heart"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-line"></div>
+                                <div class="courses_bottom_added_container_card_back_middle">
+                                    <div class="heading"><p>WHAT YOU'LL LEARN</p></div>
+                                    <div class="list">
+                                        <p><i class="fa-solid fa-check"></i><span>Learn to use Python professionally, learning both Python 2 and Python 3!</span></p>
+                                        <p><i class="fa-solid fa-check"></i><span>Create game with Python, like Tic Tac Toe and Blackjack!</span></p>
+                                        <p><i class="fa-solid fa-check"></i><span>Create game with Python, like Tic Tac Toe and Blackjack!</span></p>                                       
+                                    </div>
+                                </div>
+                                <div class="border-line"></div>
+                                <div class="courses_bottom_added_container_card_back_bottom">
+                                    <div class="buttons">
+                                        <div class="add-to-cart">
+                                            <a href=""><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                                        </div>
+                                        <div class="course-detail">
+                                            <a href="">Course Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses_bottom_added_container_card card-3">
+                            <div class="courses_bottom_added_container_card_front front-card">
+                                <div class="courses_bottom_added_container_card_front_image">
+                                    <img src="./assets/image/main/courses/Course Images (11).png" alt="course" class="main-img">
+                                </div>
+                                <div class="courses_bottom_added_container_card_front_info">
+                                    <div class="courses_bottom_added_container_card_front_info_heading">
+                                        <div class="course-name">
+                                            <span>Design</span>
+                                        </div>
+                                        <div class="cost">$57</div>
+                                    </div>
+                                    <div class="courses_bottom_added_container_card_front_info_text">
+                                        <p>The Python Mega Course: Build 10 Real World Applications</p>
+                                    </div>
+                                    <div class="courses_bottom_added_container_card_front_info_rating">
+                                        <div class="rank">
+                                            <div class="star">
+                                                <img src="./assets/image/main/Star.svg" alt="star">
+                                            </div>
+                                        </div>
+                                        <div class="members">
+                                            <div class="icon">
+                                                <img src="./assets/image/main/User.svg" alt="user">
+                                            </div>
+                                            <div class="members-num">
+                                                <span>265.7K</span>
+                                            </div>
+                                            <div class="members-name">
+                                                <span>students</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses_bottom_added_container_card_back back-card">
+                                <div class="courses_bottom_added_container_card_back_top">
+                                    <div class="course-name development">
+                                        <span>Developments</span>
+                                    </div>
+                                    <div class="course-text">
+                                        <p>2021 Complete Python Bootcamp From Zero to Hero in Python</p>
+                                    </div>
+                                    <div class="profile">
+                                        <div class="user">
+                                            <div class="icon"><img src="./assets/image/main/User.svg" alt="user"></div>
+                                            <div class="about-user">
+                                                <span>Course by</span>
+                                                <span class="user-name">User Userov</span>
+                                            </div>
+                                        </div>
+                                        <div class="rank">
+                                            <img src="./assets/image/main/Star.svg" alt="star">
+                                            <span class="star-num">5.0</span>
+                                            <span class="user-num">(357,914)</span>
+                                        </div>                                       
+                                    </div>
+                                    <div class="about-course">
+                                        <div class="course-member">
+                                            <div class="icon"><img src="./assets/image/main/User.svg" alt="user"></div>
+                                            <div class="members-num"><span>265.7K</span> <span class="user-role">students</span></div>
+                                        </div>
+                                        <div class="course-level">
+                                            <div class="icon"><img src="./assets/image/main/bar-chart.svg" alt="bar-chart"></div>
+                                            <div class="level-text">Beginner</div>
+                                        </div>
+                                        <div class="course-hour">
+                                            <div class="icon"><img src="./assets/image/main/Clock.svg" alt="clock"></div>
+                                            <div class="hour-text"><span>6 hour</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="course-cost">
+                                        <div class="amount">
+                                            <span>$14.00</span>
+                                            <span class="del">$26.00</span>
+                                            <span class="discount">56% OFF</span>
+                                        </div>
+                                        <div class="liked">
+                                            <div class="icon"><i class="fa-regular fa-heart"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-line"></div>
+                                <div class="courses_bottom_added_container_card_back_middle">
+                                    <div class="heading"><p>WHAT YOU'LL LEARN</p></div>
+                                    <div class="list">
+                                        <p><i class="fa-solid fa-check"></i><span>Learn to use Python professionally, learning both Python 2 and Python 3!</span></p>
+                                        <p><i class="fa-solid fa-check"></i><span>Create game with Python, like Tic Tac Toe and Blackjack!</span></p>
+                                        <p><i class="fa-solid fa-check"></i><span>Create game with Python, like Tic Tac Toe and Blackjack!</span></p>                                       
+                                    </div>
+                                </div>
+                                <div class="border-line"></div>
+                                <div class="courses_bottom_added_container_card_back_bottom">
+                                    <div class="buttons">
+                                        <div class="add-to-cart">
+                                            <a href=""><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                                        </div>
+                                        <div class="course-detail">
+                                            <a href="">Course Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="courses_bottom_added_container_card card-4">
+                            <div class="courses_bottom_added_container_card_front front-card">
+                                <div class="courses_bottom_added_container_card_front_image">
+                                    <img src="./assets/image/main/courses/Course Images (5).png" alt="course" class="main-img">
+                                </div>
+                                <div class="courses_bottom_added_container_card_front_info">
+                                    <div class="courses_bottom_added_container_card_front_info_heading">
+                                        <div class="course-name">
+                                            <span>Design</span>
+                                        </div>
+                                        <div class="cost">$57</div>
+                                    </div>
+                                    <div class="courses_bottom_added_container_card_front_info_text">
+                                        <p>The Python Mega Course: Build 10 Real World Applications</p>
+                                    </div>
+                                    <div class="courses_bottom_added_container_card_front_info_rating">
+                                        <div class="rank">
+                                            <div class="star">
+                                                <img src="./assets/image/main/Star.svg" alt="star">
+                                            </div>
+                                        </div>
+                                        <div class="members">
+                                            <div class="icon">
+                                                <img src="./assets/image/main/User.svg" alt="user">
+                                            </div>
+                                            <div class="members-num">
+                                                <span>265.7K</span>
+                                            </div>
+                                            <div class="members-name">
+                                                <span>students</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses_bottom_added_container_card_back back-card">
+                                <div class="courses_bottom_added_container_card_back_top">
+                                    <div class="course-name health">
+                                        <span>Health & Fitness</span>
+                                    </div>
+                                    <div class="course-text">
+                                        <p>2021 Complete Python Bootcamp From Zero to Hero in Python</p>
+                                    </div>
+                                    <div class="profile">
+                                        <div class="user">
+                                            <div class="icon"><img src="./assets/image/main/User.svg" alt="user"></div>
+                                            <div class="about-user">
+                                                <span>Course by</span>
+                                                <span class="user-name">User Userov</span>
+                                            </div>
+                                        </div>
+                                        <div class="rank">
+                                            <img src="./assets/image/main/Star.svg" alt="star">
+                                            <span class="star-num">5.0</span>
+                                            <span class="user-num">(357,914)</span>
+                                        </div>                                       
+                                    </div>
+                                    <div class="about-course">
+                                        <div class="course-member">
+                                            <div class="icon"><img src="./assets/image/main/User.svg" alt="user"></div>
+                                            <div class="members-num"><span>265.7K</span> <span class="user-role">students</span></div>
+                                        </div>
+                                        <div class="course-level">
+                                            <div class="icon"><img src="./assets/image/main/bar-chart.svg" alt="bar-chart"></div>
+                                            <div class="level-text">Beginner</div>
+                                        </div>
+                                        <div class="course-hour">
+                                            <div class="icon"><img src="./assets/image/main/Clock.svg" alt="clock"></div>
+                                            <div class="hour-text"><span>6 hour</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="course-cost">
+                                        <div class="amount">
+                                            <span>$14.00</span>
+                                            <span class="del">$26.00</span>
+                                            <span class="discount">56% OFF</span>
+                                        </div>
+                                        <div class="liked">
+                                            <div class="icon"><i class="fa-regular fa-heart"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-line"></div>
+                                <div class="courses_bottom_added_container_card_back_middle">
+                                    <div class="heading"><p>WHAT YOU'LL LEARN</p></div>
+                                    <div class="list">
+                                        <p><i class="fa-solid fa-check"></i><span>Learn to use Python professionally, learning both Python 2 and Python 3!</span></p>
+                                        <p><i class="fa-solid fa-check"></i><span>Create game with Python, like Tic Tac Toe and Blackjack!</span></p>
+                                        <p><i class="fa-solid fa-check"></i><span>Create game with Python, like Tic Tac Toe and Blackjack!</span></p>                                       
+                                    </div>
+                                </div>
+                                <div class="border-line"></div>
+                                <div class="courses_bottom_added_container_card_back_bottom">
+                                    <div class="buttons">
+                                        <div class="add-to-cart">
+                                            <a href=""><i class="fa-solid fa-cart-shopping"></i> Add To Cart</a>
+                                        </div>
+                                        <div class="course-detail">
+                                            <a href="">Course Detail</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="courses_bottom_added_button">
+                        <div>
+                            <a href="">Browse All Course &#8594;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer></footer>
+    
+</body>
+</html>
