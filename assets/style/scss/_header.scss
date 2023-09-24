@@ -80,7 +80,7 @@
             background-color: #3d4249;
         }
         & ~ header nav .top-nav{
-            transform: translateX(25%);
+
             & label{
             visibility: hidden;
             }
@@ -290,7 +290,8 @@ header{
             @include flexBox(row, flex-end, null, null);
             &_container{
                 width: 68.35%;
-                @include flexBox(column, space-evenly, flex-start, null);
+                height: 100%;
+                @include flexBox(column, center, flex-start, 2rem);
                 &_content{
                     .catchword{
                         font-size: 2em;
@@ -303,8 +304,8 @@ header{
                     }
                     &_button{
                         a{
+                            display: block;
                             padding: 1rem 2rem;
-                            font-size: 100%;
                             font-weight: 600;
                             letter-spacing: -0.01125rem;
                             text-transform: capitalize;

@@ -1,0 +1,224 @@
+footer{
+    background-color: $text;
+}
+.heading{
+    padding: 7% 10%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    border-bottom: 1px solid rgba(80, 80, 80, 0.212);
+    &_left-side{
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        &_head{
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 3rem;
+            letter-spacing: -0.025rem;
+            color: white;
+        }
+        &_buttons{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            div{
+                padding: 0 1.5rem;
+                background-color: orange;
+                cursor: pointer;
+                a{
+                    display: block;
+                    font-weight: 600;
+                    line-height: 3rem;
+                    letter-spacing: -0.008rem;
+                    text-transform: capitalize;
+                    color: white;
+                }
+            }
+            .browse{
+                background: rgba(255, 255, 255, 0.05);
+            }
+            .join{
+                background-color: $btn-color;
+            }
+        }
+    }
+    &_right-side{
+        width: 50%;
+        &_statistics{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            .card{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                .num{
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                    line-height: 3rem;
+                    letter-spacing: -0.025rem;
+                    color: white;
+                }
+                .text{
+                    font-weight: 500;
+                    line-height: 1.375rem;
+                    color: #B7BAC7;
+                }
+            }
+        }
+    }
+}
+
+.middle{
+    padding: 7% 10%;
+    display: flex;
+    gap: 5%;
+    border-bottom: 1px solid rgba(80, 80, 80, 0.212);
+    &_left-side{
+        width: 25%;
+        @include flexBox (column, center, flex-start, 1.25rem);
+        &_head{
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            span{
+                font-size: 2.3rem;
+                font-weight: 600;
+                line-height: 124%;
+                letter-spacing: -0.069rem;
+                color: white;
+            }
+        }
+        &_text {
+            p{
+                font-size: 0.875rem;
+                line-height: 1.375rem;
+                letter-spacing: -0.00875rem;
+                color: #8C94A3;
+            }
+        }
+        &_icons{
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            .icon{
+                width: 2.7rem;
+                height: 2.7rem;
+                background: rgba(54, 59, 71, 0.40);
+                position: relative;
+                img{
+                    position: absolute;
+                    @extend %center;
+                }
+                cursor: pointer;
+                &:hover{
+                    background-color: $btn-color;
+                    box-shadow: 0px 6px 20px 0px rgba(204, 82, 43, 0.50);
+                }
+            }
+        }
+    }
+    &_right-side{
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 3.5rem;
+        &_card{
+            @include flexBox (column, center, flex-start, 1.25rem);
+            &_head{
+                span{
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+            &_list{
+                .text{
+                    padding: 0.375rem 0rem;
+                    span{
+                        visibility: hidden;
+                        padding-left: 0.5rem;
+                        color: $btn-color;
+                    }
+                    a{
+                        font-size: 0.875rem;
+                        line-height: 1.375rem;
+                        letter-spacing: -0.00875rem;
+                        padding: 0.2rem 0rem;
+                        border-bottom: 1px solid $text;
+                        color: #8C94A3;
+                        cursor: pointer;
+                        &:hover{
+                            color: $btn-color;
+                            border-bottom: 1px solid $btn-color;
+                            & + span{
+                                visibility: visible;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+            &_logo{
+                display: flex;
+                flex-direction: column;
+                gap: 0.75rem;
+                .brend{
+                    padding: 0.7rem 1.25rem;
+                    background: rgba(54, 59, 71, 0.40);
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    .text{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0.3rem;
+                        .brend-name{
+                            font-weight: 500;
+                            line-height: 1.375rem;
+                            color: white;
+                        }
+                        .download{
+                            font-size: 0.625rem;
+                            line-height: 0.625rem;
+                            color: #B7BAC7;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bottom{
+    padding: 1rem 1rem;
+    width: 70%;
+    margin: 0 auto;
+    @include flexBox (row, space-between, center, 2rem);
+    p{
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+        letter-spacing: -0.00875rem;
+        color: $menu-gray;
+        span{
+            color: white;
+        }
+    }
+
+    select{
+        padding: 0.5rem 1rem;
+        padding-right: 2.5rem;
+        background-color: $text;
+        border-color:  #363B47;
+        color: $menu-gray;
+
+    }
+}

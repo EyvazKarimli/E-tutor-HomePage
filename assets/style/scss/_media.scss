@@ -1,3 +1,25 @@
+@media (max-width: 1380px ) and (min-width: 1033px){
+    main{
+        section.courses{
+            div.courses_bottom{
+                div.card-1{
+                    z-index: 4;
+                }
+                div.card-2{
+                    z-index: 4;
+                }
+                div.card-3{
+                    z-index: 4;
+                }
+                div.card-4{
+                    z-index: 3;
+                }
+                
+            }
+        }
+    }
+}
+
 @media (max-width:1280px) {
     header{
         nav{
@@ -25,6 +47,25 @@
                 }
             }
             
+        }
+    }
+    main{
+        section.courses{
+            div.courses_bottom{
+                div.card-1{
+                    z-index: 5;
+                }
+                div.card-2{
+                    z-index: 5;
+                }
+                div.card-3{
+                    z-index: 3;
+                }
+                div.card-4{
+                    z-index: 4;
+                }
+                
+            }
         }
     }
 }
@@ -56,6 +97,44 @@
             }
         }
     }
+    main{
+        section.advert{
+            flex-direction: column;
+            align-items: center;
+            gap: 5rem;
+            div.advert_teaching{
+                width: 80%;
+                height: 45%;
+                background-size: 100% 100%;
+            }
+            div.advert_steps{
+                width: 80%;
+                height: 45%;
+            }
+        }
+    }
+}
+
+@media (max-width:679px){
+    main{
+        section.courses{
+            div.courses_bottom{
+                div.card-1{
+                    z-index: 5;
+                }
+                div.card-2{
+                    z-index: 4;
+                }
+                div.card-3{
+                    z-index: 3;
+                }
+                div.card-4{
+                    z-index: 2;
+                }
+                
+            }
+        }
+    }
 }
 
 @media (max-width: 640px){
@@ -79,6 +158,82 @@
             }
         }
     }
+    main{
+        div.courses_bottom_feature{
+            font-size: 1rem;
+        }
+        div.courses_bottom_feature_cards{
+            &_card{
+                flex-direction: column;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+        section.company{
+            div.company_brends{
+                flex-direction: column;
+                gap: 2rem;
+                justify-content: center;
+                div.company_brends_text{
+                    text-align: center;
+                    width: 100%;
+                    span{
+                        width: 100%;
+                    }
+                }
+                div.company_brends_logo{
+                    width: 100%;
+                    div.company_brends_logo_card{
+                        width: 30%;
+                        padding: 0.5rem 1.75rem;
+                        flex-wrap: wrap;
+                    }
+                }
+
+            }
+
+        }
+    }
+    footer{
+        section.heading{
+            padding:  2rem 1rem;
+            flex-direction: column;
+            gap: 2rem;
+            div.heading_left-side{
+                div.heading_left-side_buttons{
+                    div{
+                        padding: 0.5rem;
+                        a{
+                            line-height: 1.5rem;
+                        }
+                    }
+                }
+            }
+            div.heading_right-side{
+                width: 100%;
+                div.heading_right-side_statistics{
+                    text-align: center;
+                    gap: 1rem;
+                }
+            }
+
+        }
+        section.middle{
+            flex-direction: column;
+            gap: 2rem;
+            div.middle_left-side{
+                width: 100%;
+                flex-wrap: wrap;
+            }
+            div.middle_right-side{
+                width: 100%;
+            }
+        }
+        section.bottom{
+            flex-direction: column;
+        }
+    }
 }
 
 
@@ -99,11 +254,72 @@
         }
         section.heading{
             flex-direction: column;
+            width: 100%;
             gap: 2rem;
             div.heading_left-side_container{
                 flex-direction: column;
-                gap: 1rem;
+                width: 200px;
+                gap: 2rem;
+                align-items: center;
+                justify-content: center;
             }
         }
+
+      
+    }
+    main{
+        section.courses{
+            div.courses_bottom{
+                div.courses_bottom_feature{
+                    border: none;
+                    div.courses_bottom_feature_heading{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        align-items: center;
+                    }
+                }
+            }
+            .courses_bottom_feature_cards_card_info_statistics{
+                flex-direction: column;
+            }
+            .courses_bottom_feature_cards_card_info_rank{
+                flex-direction: column;
+                align-items: center;
+            }
+            .courses_bottom_feature_cards_card{
+                width: 50px;
+                img{
+                    width: 100%;
+                }
+            }
+            .courses_bottom_feature_cards_card_info_heading{
+                flex-direction: column;
+                width: 120px;
+            }
+        }
+        section.advert{
+            flex-direction: column;
+            align-items: center;
+            gap: 5rem;
+            padding-top: 0;
+            div.advert_teaching{
+                width: 80%;
+                height: 45%;
+                background-size: 100% 100%;
+            }
+            div.advert_steps{
+                width: 80%;
+                height: 45%;
+                padding: 1%;
+                div.advert_steps_text_heading{
+                    p{
+                        font-size: 1.5rem;
+                        line-height: 1.5rem;
+                    }
+                }
+            }
+        }
+
     }
 }

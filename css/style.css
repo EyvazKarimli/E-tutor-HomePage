@@ -50,14 +50,14 @@ table {
   border-spacing: 0;
 }
 
-.courses_bottom_added_container_card_back_top .course-cost .liked i, .courses_bottom_added_container_card_back_top .profile .user .icon img, .courses_bottom_feature_cards_card_info_rank .profile .icon img {
+.middle_left-side_icons .icon img, .advert_steps_text_options_opt .number span, .courses_bottom_added_container_card_back_top .course-cost .liked i, .courses_bottom_added_container_card_back_top .profile .user .icon img, .courses_bottom_feature_cards_card_info_rank .profile .icon img {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 }
 
-.courses_bottom_feature_cards_card_info_border, .courses_top_best-selling_cards_card .border {
+.company_instructors_container_card_border, .courses_bottom_feature_cards_card_info_border, .courses_top_best-selling_cards_card .border {
   width: 100%;
   height: 1px;
   background-color: #E9EAF0;
@@ -71,6 +71,28 @@ table {
   padding: 0.25rem 0.38rem;
 }
 
+.company_instructors_bottom p a, .company_instructors_bottom p, .company_instructors_container_card_rank span {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: -0.00875rem;
+  color: #4E5566;
+}
+
+@media (max-width: 1380px) and (min-width: 1033px) {
+  main section.courses div.courses_bottom div.card-1 {
+    z-index: 4;
+  }
+  main section.courses div.courses_bottom div.card-2 {
+    z-index: 4;
+  }
+  main section.courses div.courses_bottom div.card-3 {
+    z-index: 4;
+  }
+  main section.courses div.courses_bottom div.card-4 {
+    z-index: 3;
+  }
+}
 @media (max-width: 1280px) {
   header nav div.top-nav {
     justify-content: flex-start;
@@ -91,6 +113,18 @@ table {
   }
   header nav div.bottom-nav div.select-container {
     display: none;
+  }
+  main section.courses div.courses_bottom div.card-1 {
+    z-index: 5;
+  }
+  main section.courses div.courses_bottom div.card-2 {
+    z-index: 5;
+  }
+  main section.courses div.courses_bottom div.card-3 {
+    z-index: 3;
+  }
+  main section.courses div.courses_bottom div.card-4 {
+    z-index: 4;
   }
 }
 @media (max-width: 1000px) {
@@ -115,6 +149,34 @@ table {
   header section.heading div.heading_left-side div.heading_left-side_container div.heading_left-side_container_content_button a {
     padding: 0.25rem 1rem;
   }
+  main section.advert {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+  main section.advert div.advert_teaching {
+    width: 80%;
+    height: 45%;
+    background-size: 100% 100%;
+  }
+  main section.advert div.advert_steps {
+    width: 80%;
+    height: 45%;
+  }
+}
+@media (max-width: 679px) {
+  main section.courses div.courses_bottom div.card-1 {
+    z-index: 5;
+  }
+  main section.courses div.courses_bottom div.card-2 {
+    z-index: 4;
+  }
+  main section.courses div.courses_bottom div.card-3 {
+    z-index: 3;
+  }
+  main section.courses div.courses_bottom div.card-4 {
+    z-index: 2;
+  }
 }
 @media (max-width: 640px) {
   header div.top-nav_options {
@@ -131,6 +193,67 @@ table {
     line-height: 2rem;
     font-weight: 500;
   }
+  main div.courses_bottom_feature {
+    font-size: 1rem;
+  }
+  main div.courses_bottom_feature_cards_card {
+    flex-direction: column;
+  }
+  main div.courses_bottom_feature_cards_card img {
+    width: 100%;
+  }
+  main section.company div.company_brends {
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+  }
+  main section.company div.company_brends div.company_brends_text {
+    text-align: center;
+    width: 100%;
+  }
+  main section.company div.company_brends div.company_brends_text span {
+    width: 100%;
+  }
+  main section.company div.company_brends div.company_brends_logo {
+    width: 100%;
+  }
+  main section.company div.company_brends div.company_brends_logo div.company_brends_logo_card {
+    width: 30%;
+    padding: 0.5rem 1.75rem;
+    flex-wrap: wrap;
+  }
+  footer section.heading {
+    padding: 2rem 1rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer section.heading div.heading_left-side div.heading_left-side_buttons div {
+    padding: 0.5rem;
+  }
+  footer section.heading div.heading_left-side div.heading_left-side_buttons div a {
+    line-height: 1.5rem;
+  }
+  footer section.heading div.heading_right-side {
+    width: 100%;
+  }
+  footer section.heading div.heading_right-side div.heading_right-side_statistics {
+    text-align: center;
+    gap: 1rem;
+  }
+  footer section.middle {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  footer section.middle div.middle_left-side {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  footer section.middle div.middle_right-side {
+    width: 100%;
+  }
+  footer section.bottom {
+    flex-direction: column;
+  }
 }
 @media (max-width: 480px) {
   header nav div.bottom-nav {
@@ -146,11 +269,61 @@ table {
   }
   header section.heading {
     flex-direction: column;
+    width: 100%;
     gap: 2rem;
   }
   header section.heading div.heading_left-side_container {
     flex-direction: column;
-    gap: 1rem;
+    width: 200px;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  main section.courses div.courses_bottom div.courses_bottom_feature {
+    border: none;
+  }
+  main section.courses div.courses_bottom div.courses_bottom_feature div.courses_bottom_feature_heading {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  main section.courses .courses_bottom_feature_cards_card_info_statistics {
+    flex-direction: column;
+  }
+  main section.courses .courses_bottom_feature_cards_card_info_rank {
+    flex-direction: column;
+    align-items: center;
+  }
+  main section.courses .courses_bottom_feature_cards_card {
+    width: 50px;
+  }
+  main section.courses .courses_bottom_feature_cards_card img {
+    width: 100%;
+  }
+  main section.courses .courses_bottom_feature_cards_card_info_heading {
+    flex-direction: column;
+    width: 120px;
+  }
+  main section.advert {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding-top: 0;
+  }
+  main section.advert div.advert_teaching {
+    width: 80%;
+    height: 45%;
+    background-size: 100% 100%;
+  }
+  main section.advert div.advert_steps {
+    width: 80%;
+    height: 45%;
+    padding: 1%;
+  }
+  main section.advert div.advert_steps div.advert_steps_text_heading p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
   }
 }
 .navbar {
@@ -244,9 +417,6 @@ table {
 #check-menu:checked ~ div.navbar {
   transform: translateX(0%);
   background-color: #3d4249;
-}
-#check-menu:checked ~ header nav .top-nav {
-  transform: translateX(25%);
 }
 #check-menu:checked ~ header nav .top-nav label {
   visibility: hidden;
@@ -478,10 +648,12 @@ header .heading_left-side {
 }
 header .heading_left-side_container {
   width: 68.35%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: flex-start;
+  gap: 2rem;
 }
 header .heading_left-side_container_content .catchword {
   font-size: 2em;
@@ -493,8 +665,8 @@ header .heading_left-side_container_content .mision {
   color: #4E5566;
 }
 header .heading_left-side_container_content_button a {
+  display: block;
   padding: 1rem 2rem;
-  font-size: 100%;
   font-weight: 600;
   letter-spacing: -0.01125rem;
   text-transform: capitalize;
@@ -570,47 +742,47 @@ header .heading_right-side_img img {
 .category_content_card_about .members {
   line-height: 1.375rem; /* 157.143% */
   letter-spacing: -0.00875rem;
-  color: #6E7485;
+  color: #6e7485;
   font-size: 0.875rem;
 }
 .category_content .cpu {
-  background-color: #EBEBFF;
+  background-color: #ebebff;
 }
 .category_content .handshake {
-  background-color: #E1F7E3;
+  background-color: #e1f7e3;
 }
 .category_content .creditcard {
-  background-color: #FFF2E5;
+  background-color: #fff2e5;
 }
 .category_content .chartbar {
-  background-color: #FFF0F0;
+  background-color: #fff0f0;
 }
 .category_content .bugdroid {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .category_content .bugdroid .category_content_card_icon {
   background-color: #FF6636;
 }
 .category_content .receipt {
-  background-color: #F5F7FA;
+  background-color: #f5f7fa;
 }
 .category_content .megaphone {
-  background-color: #EBEBFF;
+  background-color: #ebebff;
 }
 .category_content .camera {
-  background-color: #F5F7FA;
+  background-color: #f5f7fa;
 }
 .category_content .package {
-  background-color: #FFF2E5;
+  background-color: #fff2e5;
 }
 .category_content .pen {
-  background-color: #FFEEE8;
+  background-color: #ffeee8;
 }
 .category_content .firstaidkit {
-  background-color: #E1F7E3;
+  background-color: #e1f7e3;
 }
 .category_content .headphone {
-  background-color: #FFF2E5;
+  background-color: #fff2e5;
 }
 .category_more {
   display: flex;
@@ -622,7 +794,7 @@ header .heading_right-side_img img {
   font-size: 0.875rem;
   line-height: 1.375rem;
   letter-spacing: -0.00875rem;
-  color: #4E5566;
+  color: #4e5566;
 }
 .category_more_link {
   display: flex;
@@ -641,7 +813,7 @@ header .heading_right-side_img img {
 
 .courses_top {
   padding: 5rem 10%;
-  background-color: #F5F7FA;
+  background-color: #f5f7fa;
 }
 .courses_top_best-selling {
   display: flex;
@@ -706,36 +878,36 @@ header .heading_right-side_img img {
   color: #FF6636;
 }
 .courses_top_best-selling_cards_card .about-course .about-course_cost .design {
-  background-color: #FFEEE8;
-  color: #993D20;
+  background-color: #ffeee8;
+  color: #993d20;
 }
 .courses_top_best-selling_cards_card .about-course .about-course_cost .development {
-  background-color: #EBEBFF;
-  color: #342F98;
+  background-color: #ebebff;
+  color: #342f98;
 }
 .courses_top_best-selling_cards_card .about-course .about-course_cost .business {
-  background-color: #E1F7E3;
-  color: #15711F;
+  background-color: #e1f7e3;
+  color: #15711f;
 }
 .courses_top_best-selling_cards_card .about-course .about-course_cost .marketing {
-  background-color: #EBEBFF;
-  color: #342F98;
+  background-color: #ebebff;
+  color: #342f98;
 }
 .courses_top_best-selling_cards_card .about-course .about-course_cost .it {
-  background-color: #FFF0F0;
+  background-color: #fff0f0;
   color: #882929;
 }
 .courses_top_best-selling_cards_card .about-course .about-course_cost .music {
-  background-color: #FFF2E5;
-  color: #65390C;
+  background-color: #fff2e5;
+  color: #65390c;
 }
 .courses_top_best-selling_cards_card .about-course .about-course_cost .health {
-  background-color: #E1F7E3;
-  color: #15711F;
+  background-color: #e1f7e3;
+  color: #15711f;
 }
 .courses_top_best-selling_cards_card .about-course .about-course_cost .lifestyle {
-  background-color: #FFF2E5;
-  color: #65390C;
+  background-color: #fff2e5;
+  color: #65390c;
 }
 .courses_top_best-selling_cards_card .about-course .about-course_text {
   width: 100%;
@@ -760,7 +932,7 @@ header .heading_right-side_img img {
   font-weight: 500;
   line-height: 1.25rem;
   letter-spacing: -0.00875rem;
-  color: #4E5566;
+  color: #4e5566;
 }
 .courses_top_best-selling_cards_card .rating span.student {
   color: #8C94A3;
@@ -784,7 +956,7 @@ header .heading_right-side_img img {
   margin-top: -8rem;
   padding: 4% 4%;
   background-color: white;
-  border: 1px solid #E9EAF0;
+  border: 1px solid #e9eaf0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -793,7 +965,7 @@ header .heading_right-side_img img {
 }
 .courses_bottom_feature_heading {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .courses_bottom_feature_heading p.pharagraph-heading {
   font-size: 2.5rem;
@@ -808,7 +980,7 @@ header .heading_right-side_img img {
   font-weight: 400;
   line-height: 1.375rem;
   letter-spacing: -0.00875rem;
-  color: #4E5566;
+  color: #4e5566;
 }
 .courses_bottom_feature_cards {
   display: flex;
@@ -821,7 +993,7 @@ header .heading_right-side_img img {
   max-width: 540px;
   min-width: 250px;
   display: flex;
-  border: 1px solid #E9EAF0;
+  border: 1px solid #e9eaf0;
   transform: scale(1);
   transition: 0.2s all;
   cursor: pointer;
@@ -856,26 +1028,26 @@ header .heading_right-side_img img {
   text-transform: uppercase;
 }
 .courses_bottom_feature_cards_card_info_heading .health {
-  background-color: #E1F7E3;
+  background-color: #e1f7e3;
 }
 .courses_bottom_feature_cards_card_info_heading .health a {
-  color: #15711F;
+  color: #15711f;
 }
 .courses_bottom_feature_cards_card_info_heading .personal {
-  background-color: #FFEEE8;
+  background-color: #ffeee8;
 }
 .courses_bottom_feature_cards_card_info_heading .personal a {
-  color: #993D20;
+  color: #993d20;
 }
 .courses_bottom_feature_cards_card_info_heading .productiv {
-  background-color: #F5F7FA;
+  background-color: #f5f7fa;
   color: #1D2026;
 }
 .courses_bottom_feature_cards_card_info_heading .music {
-  background-color: #FFF2E5;
+  background-color: #fff2e5;
 }
 .courses_bottom_feature_cards_card_info_heading .music a {
-  color: #65390C;
+  color: #65390c;
 }
 .courses_bottom_feature_cards_card_info_heading .cost span {
   font-size: 1.125rem;
@@ -887,7 +1059,7 @@ header .heading_right-side_img img {
   text-decoration: line-through;
   font-size: 0.875rem;
   line-height: 1.5rem;
-  color: #A1A5B3;
+  color: #a1a5b3;
 }
 .courses_bottom_feature_cards_card_info_about {
   padding: 0 0.75rem;
@@ -920,7 +1092,7 @@ header .heading_right-side_img img {
   font-size: 0.875rem;
   line-height: 1.375rem;
   letter-spacing: -0.00875rem;
-  color: #4E5566;
+  color: #4e5566;
 }
 .courses_bottom_feature_cards_card_info_rank .rating {
   display: flex;
@@ -968,7 +1140,7 @@ header .heading_right-side_img img {
 .courses_bottom_feature_cards_card_info_statistics .students .students-num .members {
   font-weight: 500;
   line-height: 1.25rem;
-  color: #4E5566;
+  color: #4e5566;
 }
 .courses_bottom_feature_cards_card_info_statistics .students .students-num .students-text {
   color: #8C94A3;
@@ -980,7 +1152,7 @@ header .heading_right-side_img img {
   gap: 0.1rem;
 }
 .courses_bottom_feature_cards_card_info_statistics .level span {
-  color: #4E5566;
+  color: #4e5566;
 }
 .courses_bottom_feature_cards_card_info_statistics .hour {
   display: flex;
@@ -989,15 +1161,19 @@ header .heading_right-side_img img {
   gap: 0.1rem;
 }
 .courses_bottom_feature_cards_card_info_statistics .hour span {
-  color: #4E5566;
+  color: #4e5566;
 }
 .courses_bottom_added {
+  width: 100%;
   padding: 4% 4%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3.2rem;
+  gap: 1.2rem;
+}
+.courses_bottom_added_heading {
+  height: 100px;
 }
 .courses_bottom_added_heading p {
   font-size: 2.5rem;
@@ -1007,6 +1183,8 @@ header .heading_right-side_img img {
   color: #1D2026;
 }
 .courses_bottom_added_container {
+  width: 100%;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1014,14 +1192,19 @@ header .heading_right-side_img img {
   gap: 1.5rem;
   flex-wrap: wrap;
 }
+.courses_bottom_added_container_card {
+  width: 280px;
+  height: 365px;
+}
 .courses_bottom_added_container_card_front {
   width: 280px;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: space-between;
+  align-items: stretch;
   gap: 0.88rem;
-  border: 1px solid #E9EAF0;
+  border: 1px solid #e9eaf0;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   padding-bottom: 0.88rem;
   transform: rotateY(0deg);
@@ -1029,7 +1212,7 @@ header .heading_right-side_img img {
   transition: 1s all;
 }
 .courses_bottom_added_container_card_front .main-img {
-  width: 280px;
+  width: 100%;
 }
 .courses_bottom_added_container_card_front_info {
   padding: 0 1.12rem;
@@ -1044,8 +1227,8 @@ header .heading_right-side_img img {
   justify-content: space-between;
 }
 .courses_bottom_added_container_card_front_info_heading .design {
-  background-color: #FFEEE8;
-  color: #993D20;
+  background-color: #ffeee8;
+  color: #993d20;
 }
 .courses_bottom_added_container_card_front_info_heading .cost {
   font-size: 1.125rem;
@@ -1068,7 +1251,7 @@ header .heading_right-side_img img {
   font-weight: 500;
   line-height: 1.25rem;
   letter-spacing: -0.00875rem;
-  color: #4E5566;
+  color: #4e5566;
 }
 .courses_bottom_added_container_card_front_info_rating .rank {
   display: flex;
@@ -1085,8 +1268,8 @@ header .heading_right-side_img img {
 }
 .courses_bottom_added_container_card_back {
   position: absolute;
-  top: -15%;
-  left: -15%;
+  top: -5%;
+  left: -35%;
   background-color: white;
   border: 1px solid rgba(216, 216, 216, 0.728);
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -1109,20 +1292,20 @@ header .heading_right-side_img img {
   gap: 0.88rem;
 }
 .courses_bottom_added_container_card_back_top .design span {
-  background-color: #FFEEE8;
-  color: #993D20;
+  background-color: #ffeee8;
+  color: #993d20;
 }
 .courses_bottom_added_container_card_back_top .it span {
-  background-color: #FFF0F0;
+  background-color: #fff0f0;
   color: #882929;
 }
 .courses_bottom_added_container_card_back_top .development span {
-  background-color: #EBEBFF;
-  color: #342F98;
+  background-color: #ebebff;
+  color: #342f98;
 }
 .courses_bottom_added_container_card_back_top .health span {
-  background-color: #E1F7E3;
-  color: #15711F;
+  background-color: #e1f7e3;
+  color: #15711f;
 }
 .courses_bottom_added_container_card_back_top .course-text {
   font-size: 1rem;
@@ -1216,7 +1399,7 @@ header .heading_right-side_img img {
 }
 .courses_bottom_added_container_card_back_top .course-cost .amount .discount {
   padding: 0.2rem;
-  background-color: #FFEEE8;
+  background-color: #ffeee8;
   color: #FF6636;
   font-size: 0.88rem;
 }
@@ -1224,7 +1407,7 @@ header .heading_right-side_img img {
   position: relative;
   width: 2rem;
   height: 2rem;
-  background-color: #FFEEE8;
+  background-color: #ffeee8;
   color: #FF6636;
 }
 .courses_bottom_added_container_card_back_top .course-cost .liked i {
@@ -1252,13 +1435,13 @@ header .heading_right-side_img img {
   gap: 0.5rem;
 }
 .courses_bottom_added_container_card_back_middle .list p span {
-  color: #6E7485;
+  color: #6e7485;
   font-size: 0.875rem;
   line-height: 1.375rem;
   letter-spacing: -0.00875rem;
 }
 .courses_bottom_added_container_card_back_middle .list p i {
-  color: #23BD33;
+  color: #23bd33;
 }
 .courses_bottom_added_container_card_back_bottom {
   padding: 1.1rem;
@@ -1346,4 +1529,525 @@ header .heading_right-side_img img {
 }
 .courses_bottom_added_container .card-4:hover .back-card {
   transform: rotateY(0deg);
+}
+.courses_bottom_added_button {
+  display: flex;
+  justify-content: center;
+}
+.courses_bottom_added_button a {
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+  background-color: #FFEEE8;
+  color: #FF6636;
+}
+
+.advert {
+  padding-top: 5rem;
+  padding-bottom: 20rem;
+  background-color: #F5F7FA;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+.advert_teaching {
+  width: 35%;
+  height: 200px;
+  background-image: url(/assets/image/main/advert/advert-man.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2%;
+}
+.advert_teaching_text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.advert_teaching_text_heading p {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  letter-spacing: -0.02rem;
+  color: white;
+}
+.advert_teaching_text_about p {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: -0.00875rem;
+  color: white;
+  width: 60%;
+}
+.advert_teaching_text_button {
+  padding: 0 1.5rem;
+  background-color: white;
+  transform: translateX(0);
+  transition: 0.5s transform;
+  cursor: pointer;
+  border: 2px solid white;
+}
+.advert_teaching_text_button a {
+  color: #FF6636;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: -0.008rem;
+  text-transform: capitalize;
+}
+.advert_teaching_text_button:hover {
+  transform: translateX(50px);
+  background-color: #FF6636;
+}
+.advert_teaching_text_button:hover a {
+  color: white;
+}
+.advert_steps {
+  width: 35%;
+  height: 200px;
+  background-color: white;
+  padding: 2%;
+}
+.advert_steps_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.7rem;
+  height: 100%;
+}
+.advert_steps_text_heading p {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  letter-spacing: -0.02rem;
+  color: #1D2026;
+}
+.advert_steps_text_options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+.advert_steps_text_options_opt {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  flex-basis: 45%;
+}
+.advert_steps_text_options_opt .number {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  border-radius: 50%;
+}
+.advert_steps_text_options_opt .number span {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 124%;
+}
+.advert_steps_text_options_opt .text {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.advert_steps_text_options_opt .first {
+  background-color: #ebebff;
+}
+.advert_steps_text_options_opt .first span {
+  color: #564ffd;
+}
+.advert_steps_text_options_opt .second {
+  background-color: #fff0f0;
+}
+.advert_steps_text_options_opt .second span {
+  color: #FF6636;
+}
+.advert_steps_text_options_opt .third {
+  background-color: #fff0f0;
+}
+.advert_steps_text_options_opt .third span {
+  color: #FF6636;
+}
+.advert_steps_text_options_opt .fourth {
+  background-color: #e1f7e3;
+}
+.advert_steps_text_options_opt .fourth span {
+  color: #23bd33;
+}
+
+.company_instructors {
+  width: 78%;
+  margin: 0 auto;
+  margin-top: -10rem;
+  border: 1px solid #e9eaf0;
+  padding: 5rem 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+}
+.company_instructors_heading {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3rem; /* 120% */
+  letter-spacing: -0.025rem;
+  text-align: center;
+}
+.company_instructors_container {
+  display: flex;
+  justify-content: center;
+  gap: 1.56rem;
+  flex-wrap: wrap;
+}
+.company_instructors_container_card {
+  padding-bottom: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.75rem;
+  width: 200px;
+  border: 1px solid #e9eaf0;
+  transform: scale(1);
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.company_instructors_container_card_img img {
+  width: 100%;
+}
+.company_instructors_container_card_about-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.company_instructors_container_card_about-user .user-name {
+  font-weight: 500;
+  line-height: 1.375rem;
+  color: #1D2026;
+}
+.company_instructors_container_card_about-user .user-job {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: -0.00875rem;
+  color: #8C94A3;
+}
+.company_instructors_container_card_rank {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.company_instructors_container_card_rank_rating {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.company_instructors_container_card_rank_members .members-name {
+  line-height: 1.375rem;
+  color: #8C94A3;
+}
+.company_instructors_container_card:hover {
+  transform: scale(1.2);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.company_instructors_bottom p {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-weight: 400;
+  color: #6e7485;
+}
+.company_instructors_bottom p a {
+  color: #FF6636;
+}
+.company_brends {
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.company_brends_text {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.company_brends_text_heading span {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.02rem;
+  color: #1D2026;
+}
+.company_brends_text_about span {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: -0.00875rem;
+  color: #6e7485;
+  width: 75%;
+}
+.company_brends_logo {
+  width: 62%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.company_brends_logo_card {
+  background-color: white;
+  width: 10rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 32px 0px rgba(9, 26, 68, 0.07);
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.2s all;
+}
+.company_brends_logo_card:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  background-color: #1D2026;
+}
+
+.heading {
+  padding: 7% 10%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  border-bottom: 1px solid rgba(80, 80, 80, 0.212);
+}
+.heading_left-side {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.heading_left-side_head {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: -0.025rem;
+  color: white;
+}
+.heading_left-side_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.heading_left-side_buttons div {
+  padding: 0 1.5rem;
+  background-color: orange;
+  cursor: pointer;
+}
+.heading_left-side_buttons div a {
+  display: block;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: -0.008rem;
+  text-transform: capitalize;
+  color: white;
+}
+.heading_left-side_buttons .browse {
+  background: rgba(255, 255, 255, 0.05);
+}
+.heading_left-side_buttons .join {
+  background-color: #FF6636;
+}
+.heading_right-side {
+  width: 50%;
+}
+.heading_right-side_statistics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.heading_right-side_statistics .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.heading_right-side_statistics .card .num {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: -0.025rem;
+  color: white;
+}
+.heading_right-side_statistics .card .text {
+  font-weight: 500;
+  line-height: 1.375rem;
+  color: #B7BAC7;
+}
+
+.middle {
+  padding: 7% 10%;
+  display: flex;
+  gap: 5%;
+  border-bottom: 1px solid rgba(80, 80, 80, 0.212);
+}
+.middle_left-side {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+.middle_left-side_head {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.middle_left-side_head span {
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 124%;
+  letter-spacing: -0.069rem;
+  color: white;
+}
+.middle_left-side_text p {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: -0.00875rem;
+  color: #8C94A3;
+}
+.middle_left-side_icons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.middle_left-side_icons .icon {
+  width: 2.7rem;
+  height: 2.7rem;
+  background: rgba(54, 59, 71, 0.4);
+  position: relative;
+  cursor: pointer;
+}
+.middle_left-side_icons .icon img {
+  position: absolute;
+}
+.middle_left-side_icons .icon:hover {
+  background-color: #FF6636;
+  box-shadow: 0px 6px 20px 0px rgba(204, 82, 43, 0.5);
+}
+.middle_right-side {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 3.5rem;
+}
+.middle_right-side_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+.middle_right-side_card_head span {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+.middle_right-side_card_list .text {
+  padding: 0.375rem 0rem;
+}
+.middle_right-side_card_list .text span {
+  visibility: hidden;
+  padding-left: 0.5rem;
+  color: #FF6636;
+}
+.middle_right-side_card_list .text a {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: -0.00875rem;
+  padding: 0.2rem 0rem;
+  border-bottom: 1px solid #1D2026;
+  color: #8C94A3;
+  cursor: pointer;
+}
+.middle_right-side_card_list .text a:hover {
+  color: #FF6636;
+  border-bottom: 1px solid #FF6636;
+}
+.middle_right-side_card_list .text a:hover + span {
+  visibility: visible;
+}
+.middle_right-side_card_logo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.middle_right-side_card_logo .brend {
+  padding: 0.7rem 1.25rem;
+  background: rgba(54, 59, 71, 0.4);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.middle_right-side_card_logo .brend .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.middle_right-side_card_logo .brend .text .brend-name {
+  font-weight: 500;
+  line-height: 1.375rem;
+  color: white;
+}
+.middle_right-side_card_logo .brend .text .download {
+  font-size: 0.625rem;
+  line-height: 0.625rem;
+  color: #B7BAC7;
+}
+
+.bottom {
+  padding: 1rem 1rem;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.bottom p {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: -0.00875rem;
+  color: #8C94A3;
+}
+.bottom p span {
+  color: white;
+}
+.bottom select {
+  padding: 0.5rem 1rem;
+  padding-right: 2.5rem;
+  background-color: #1D2026;
+  border-color: #363B47;
+  color: #8C94A3;
 }/*# sourceMappingURL=style.css.map */
