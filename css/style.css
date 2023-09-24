@@ -372,6 +372,8 @@ table {
 }
 .navbar_buttons {
   width: 70%;
+}
+.navbar_buttons form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -610,11 +612,11 @@ header nav .bottom-nav_right-side_icons i:hover {
   transform: scale(1.2);
   color: #FF6636;
 }
-header nav .bottom-nav_right-side_buttons {
+header nav .bottom-nav_right-side_buttons form {
   display: flex;
   gap: 0.75rem;
 }
-header nav .bottom-nav_right-side_buttons a {
+header nav .bottom-nav_right-side_buttons form a {
   display: block;
   background-color: #FFEEE8;
   padding: 0 1.5rem;
@@ -625,11 +627,11 @@ header nav .bottom-nav_right-side_buttons a {
   transform: scale(1);
   transition: 0.3s;
 }
-header nav .bottom-nav_right-side_buttons a:last-of-type {
+header nav .bottom-nav_right-side_buttons form a:last-of-type {
   background-color: #FF6636;
   color: white;
 }
-header nav .bottom-nav_right-side_buttons a:hover {
+header nav .bottom-nav_right-side_buttons form a:hover {
   transform: scale(1.1);
   background-color: black;
   color: white;

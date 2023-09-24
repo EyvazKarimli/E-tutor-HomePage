@@ -37,7 +37,9 @@
     }
     &_buttons{
         width: 70%;
-        @include flexBox(column,space-between, flex-start, 2rem);
+        form{
+            @include flexBox(column,space-between, flex-start, 2rem);
+        }
         a{
             width: 100%;
             padding: 0.5rem 1.25rem;
@@ -252,32 +254,31 @@ header{
                     }
                 }
                 &_buttons{
-                    display: flex;
-                    gap: 0.75rem;
-                    a{
-                        display: block;
-                        background-color: $btn-bg;
-                        padding: 0 1.5rem;
-                        font-weight: 600;
-                        line-height: 2.5rem;
-                        text-transform: capitalize;
-                        color: $btn-color;
-                        transform: scale(1);
-                        transition: 0.3s;
-                        &:last-of-type{
-                            background-color: $btn-color;
-                            color: white;
-                        }
-                        &:hover{
-                            transform: scale(1.1);   
-                            background-color: black;
-                            color: white;
+                    form{
+                        display: flex;
+                        gap: 0.75rem;
+                        a{
+                            display: block;
+                            background-color: $btn-bg;
+                            padding: 0 1.5rem;
+                            font-weight: 600;
+                            line-height: 2.5rem;
+                            text-transform: capitalize;
+                            color: $btn-color;
+                            transform: scale(1);
+                            transition: 0.3s;
+                            &:last-of-type{
+                                background-color: $btn-color;
+                                color: white;
+                            }
+                            &:hover{
+                                transform: scale(1.1);   
+                                background-color: black;
+                                color: white;
+                            }
                         }
                     }
                 }
-
-
-                
             }
         }
     }
