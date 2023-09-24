@@ -1757,7 +1757,7 @@ header .heading_right-side_img img {
   color: #8C94A3;
 }
 .company_instructors_container_card:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .company_instructors_bottom p {
@@ -2050,4 +2050,12 @@ footer {
   background-color: #1D2026;
   border-color: #363B47;
   color: #8C94A3;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), local("Inter"), url("/assets/font/Inter/Inter-VariableFont_slnt,wght.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
 }/*# sourceMappingURL=style.css.map */
